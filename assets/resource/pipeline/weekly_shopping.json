@@ -58,6 +58,7 @@
             }
         },
         "pre_delay": 500,
+        "post_delay": 500,
         "next": ["商城每周礼包"]
     },
     "商城每周礼包": {
@@ -172,6 +173,20 @@
             "Node.PipelineNode.Failed": "[color:red]快乐小铺没有可购买物品[/color]"
         },
         "timeout": 5000,
+        "next": ["确认进入快乐小铺"]
+    },
+    "确认进入快乐小铺": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["快乐巧克力.png"],
+                "roi": [632, 54, 41, 38]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "next": ["周常_极空许愿券", "周常_辉耀磁石"]
     },
     "周常_极空许愿券": {
