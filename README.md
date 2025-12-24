@@ -23,6 +23,7 @@
   <img alt="stars" src="https://img.shields.io/github/stars/Witty36/MaaLYSK?style=social">
   <img alt="downloads" src="https://img.shields.io/github/downloads/Witty36/MaaLYSK/total?style=social">
 </p>
+
 [简体中文]
 </div>
 
@@ -73,7 +74,7 @@
 
 ### Windows
 
-##### 环境要求
+#### 环境要求
 
 - [`Visual C++ 可再发行程序包`](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 - [`.NET 桌面运行时 10（.NET Desktop Runtime 10.0.0）`](https://dotnet.microsoft.com/en-us/download/dotnet/10.0#:~:text=Binaries-,Windows,-x64)
@@ -82,7 +83,7 @@
 
 若安装失败可点击上方链接跳转并逐个安装。
 
-##### 下载步骤
+#### 下载步骤
 
 - 对于绝大部分用户，请下载 `MaaLYSK-win-x86_64-vx.x.x.zip`并解压在非C盘的非中文路径下。推荐解压路径如：`D:\MaaLYSK`
 - 若确定自己的电脑是 arm 架构，请下载 `MaaLYSK-win-aarch64-vx.x.x.zip`（测试中）
