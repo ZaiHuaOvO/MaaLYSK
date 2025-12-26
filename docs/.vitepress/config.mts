@@ -38,9 +38,9 @@ export default defineConfig({
     description: "MaaLYSK Documentation",
 
     // 静态资源引用
-    head: [["link", {rel: "icon", href: "/MaaLYSK/doc_image/logo.ico"}]],
+    head: [["link", {rel: "icon", href: "/MaaLYSK/logo.ico"}]],
     themeConfig: {
-        logo: "/doc_image/logo.ico",
+        logo: "/logo.ico",
         socialLinks: [
             {icon: "github", link: "https://github.com/Witty36/MaaLYSK"},
         ],
