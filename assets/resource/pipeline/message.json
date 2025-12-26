@@ -12,6 +12,7 @@
             "确认在信息页面",
             "[JumpBack]选择手机信息",
             "[JumpBack]进入手机",
+            "[JumpBack]进入手机（绿码）",
             "[JumpBack]导航回主页面"
         ]
     },
@@ -20,13 +21,33 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["phone/手机入口.png"],
-                "roi": [37, 1039, 50, 57]
+                "template": ["phone/手机入口.png", "phone/手机入口1.png"],
+                "roi": [30, 1026, 66, 84]
             }
         },
         "action": {
             "type": "Click",
-            "param": {}
+            "param": {"target": [53, 1060, 8, 17]}
+        },
+        "post_delay": 2000,
+        "timeout": 2000,
+        "next": []
+    },
+    "进入手机（绿码）": {
+        "pre_delay": 1000,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["phone/手机入口（绿码）.png"],
+                "roi": [30, 1026, 66, 84],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [53, 1060, 8, 17]
+            }
         },
         "post_delay": 2000,
         "timeout": 2000,
