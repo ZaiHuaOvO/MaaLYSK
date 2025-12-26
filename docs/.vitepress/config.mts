@@ -52,6 +52,7 @@ export default defineConfig({
         logo: "/logo.ico",
         search: {
             provider: "local",
+
             options: {
                 locales: {
                     zh_cn: {
