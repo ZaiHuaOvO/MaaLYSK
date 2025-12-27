@@ -35,7 +35,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["日常一键领取.png"],
+                "template": ["task/daily/日常一键领取.png"],
                 "roi": [531, 1128, 164, 58]
             }
         },

@@ -14,7 +14,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["主页面识别.png"],
+                "template": ["mainmap/主页面识别.png"],
                 "roi": [20, 56, 49, 35]
             }
         },
@@ -28,7 +28,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["进入好友体力.png"],
+                "template": ["energy/进入好友体力.png"],
                 "roi": [24, 141, 31, 41],
                 "green_mask": true,
                 "threshold": [0.5]
@@ -45,7 +45,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["好友体力领取.png"],
+                "template": ["energy/好友体力领取.png"],
                 "roi": [402, 1137, 200, 61]
             }
         },

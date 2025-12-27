@@ -74,7 +74,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城每周免费礼包.png"],
+                "template": ["shopping/weekly/商城每周免费礼包.png"],
                 "roi": [60, 279, 583, 926],
                 "order_by": "Score"
             }
@@ -90,7 +90,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城免费点击.png"],
+                "template": ["shopping/商城免费点击.png"],
                 "roi": [254, 882, 224, 90],
                 "threshold": [0.5]
             }
@@ -181,7 +181,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["快乐巧克力.png"],
+                "template": ["shopping/weekly/快乐巧克力.png"],
                 "roi": [632, 54, 41, 38]
             }
         },
@@ -205,7 +205,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["极空许愿券.png"],
+                "template": ["shopping/weekly/极空许愿券.png"],
                 "roi": [46, 376, 312, 176]
             }
         },
@@ -219,7 +219,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/商店购买.png"],
                 "roi": [256, 743, 215, 68]
             }
         },
@@ -237,7 +237,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["辉耀磁石.png"],
+                "template": ["shopping/weekly/辉耀磁石.png"],
                 "roi": [46, 376, 312, 176]
             }
         },
@@ -251,7 +251,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["加号.png"],
+                "template": ["shopping/weekly/加号.png"],
                 "roi": [556, 685, 37, 36]
             }
         },
@@ -265,7 +265,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/商店购买.png"],
                 "roi": [251, 814, 220, 65],
                 "threshold": [0.6]
             }
@@ -303,7 +303,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["记忆心砂_稀有.png"],
+                "template": ["shopping/weekly/记忆心砂_稀有.png"],
                 "roi": [632, 54, 41, 38]
             }
         },
@@ -322,7 +322,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["紫砂购买.png"],
+                "template": ["shopping/weekly/紫砂购买.png"],
                 "roi": [513, 449, 87, 42]
             }
         },
@@ -336,7 +336,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["加号.png"],
+                "template": ["shopping/weekly/加号.png"],
                 "roi": [556, 685, 37, 36]
             }
         },
@@ -353,7 +353,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/商店购买.png"],
                 "roi": [252, 798, 221, 66]
             }
         },

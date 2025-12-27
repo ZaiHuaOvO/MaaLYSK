@@ -47,7 +47,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["日常一键领取.png"],
+                "template": ["task/daily/日常一键领取.png"],
                 "roi": [483, 1103, 136, 55]
             }
         },
@@ -72,21 +72,6 @@
         },
         "post_delay": 500,
         "next": []
-    },
-    "日常收尾领取完成": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": ["领取.png"],
-                "roi": [456, 365, 221, 140]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "inverse": true,
-        "next": ["日常签到准备"]
     },
 
     "日常签到准备": {
@@ -125,7 +110,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["日常签到领取.png"],
+                "template": ["task/daily/日常签到领取.png"],
                 "roi": [88, 306, 562, 777],
                 "threshold": [0.5]
             }

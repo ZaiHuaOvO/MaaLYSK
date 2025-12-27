@@ -20,7 +20,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/哈特.png"],
+                "template": ["fight/lingdianzhuizong/哈特.png"],
                 "roi": [123, 310, 177, 255]
             }
         },

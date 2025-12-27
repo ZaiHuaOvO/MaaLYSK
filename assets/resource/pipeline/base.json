@@ -6,7 +6,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["进入日程.png"],
+                "template": ["mainmap/进入日程.png"],
                 "roi": [563, 559, 191, 186]
             }
         },
@@ -22,7 +22,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["进入活动.png"],
+                "template": ["mainmap/进入活动.png"],
                 "roi": [647, 728, 40, 52],
                 "green_mask": true
             }
@@ -150,7 +150,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/豆佬.png"],
+                "template": ["fight/lingdianzhuizong/豆佬.png"],
                 "roi": [394, 121, 237, 318]
             }
         },

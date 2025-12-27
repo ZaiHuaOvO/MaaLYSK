@@ -99,7 +99,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/秦彻让我抓.png"],
+                "template": ["minigame/秦彻让我抓.png"],
                 "roi": [221, 57, 247, 325]
             }
         },
@@ -148,7 +148,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/娃娃位置确认.png"],
+                "template": ["minigame/catchtoy/娃娃位置确认.png"],
                 "roi": [268, 867, 195, 85]
             }
         },
@@ -163,7 +163,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/抓娃娃蓝色按钮.png"],
+                "template": ["minigame/catchtoy/抓娃娃蓝色按钮.png"],
                 "roi": [299, 1128, 58, 48]
             }
         },
@@ -182,7 +182,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/抓娃娃绿色按钮.png"],
+                "template": ["minigame/catchtoy/抓娃娃绿色按钮.png"],
                 "roi": [141, 1132, 51, 42]
             }
         },
@@ -201,7 +201,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/抓娃娃粉色按钮.png"],
+                "template": ["minigame/catchtoy/抓娃娃粉色按钮.png"],
                 "roi": [475, 1127, 71, 51]
             }
         },
@@ -221,7 +221,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/男主抓娃娃.png"],
+                "template": ["minigame/catchtoy/男主抓娃娃.png"],
                 "roi": [79, 426, 162, 190]
             }
         },

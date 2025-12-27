@@ -69,7 +69,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城每日免费礼包.png"],
+                "template": ["shopping/daily/商城每日免费礼包.png"],
                 "roi": [60, 279, 583, 926],
                 "order_by": "Score",
                 "threshold": [0.85]
@@ -86,7 +86,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城免费点击.png"],
+                "template": ["shopping/商城免费点击.png"],
                 "roi": [257, 893, 206, 59],
                 "threshold": [0.45]
             }
@@ -131,7 +131,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["是否商城页面.png"],
+                "template": ["shopping/是否商城页面.png"],
                 "roi": [91, 187, 48, 61],
                 "threshold": [0.45]
             }
