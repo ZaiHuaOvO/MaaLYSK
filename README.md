@@ -22,7 +22,7 @@
     <img alt="stars" src="https://img.shields.io/github/stars/Witty36/MaaLYSK?style=social">
     <img alt="downloads" src="https://img.shields.io/github/downloads/Witty36/MaaLYSK/total?style=social">
   </div>
-  
+
   <br>
 
   [简体中文]
@@ -73,6 +73,20 @@
 ## 下载方式
 
 下载地址：[Releases](https://github.com/Witty36/MaaLYSK/releases)
+
+## 使用说明
+
+- [快速开始](/docs/zh_cn/manual/1.1-快速开始.md) - 使用前必看，快速配置和启动
+- [功能介绍(建设中)](/docs/zh_cn/manual/1.2-功能介绍.md) - 详细的功能说明和使用技巧
+- [图文教程](/docs/zh_cn/manual/1.3-图文教程.md) - 专为小白编写的手把手教程
+- [常见问题(建设中)](/docs/zh_cn/manual/2.1-常见问题.md) - 遇到问题先看里
+
+## 开发相关
+
+- [零基础开发指南](/docs/zh_cn/develop/0.0-MaaLYSK零基础开发指南.md) - 环境配置与开发流程
+- [开发规范(建设中)](/docs/zh_cn/develop/1.1-MaaLYSK开发规范.md) - 代码规范说明
+- [文档编写(建设中)](/docs/zh_cn/develop/2.2-文档编写.md) - 关于Markdown文档编写的规范和说明
+- [文档站开发指南](/docs/zh_cn/develop/2.1-文档站开发指南.md) - 关于文档站开发的规范和说明
 
 ### Windows
 
