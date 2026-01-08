@@ -118,6 +118,7 @@ export default defineConfig({
             link: "/zh_cn/",
             themeConfig: {
                 outline: {
+                    level: [2, 3],
                     label: "在本页",
                 },
                 nav: [
