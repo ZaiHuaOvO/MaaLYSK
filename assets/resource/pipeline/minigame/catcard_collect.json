@@ -8,6 +8,39 @@
             "type": "DoNothing",
             "param": {}
         },
+        "timeout": 5000,
+        "next": [
+            "[JumpBack]喵喵牌抽卡寻找_第一排",
+            "[JumpBack]喵喵牌抽卡寻找_第二排",
+            "[JumpBack]退出牵绊度提升popop"
+        ]
+    },
+    "喵喵牌抽卡寻找_第一排": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^[0-8]/9$"],
+                "roi": [122, 391, 536, 52]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {"target_offset": [16, -86, 9, 27]}
+        },
+        "next": ["开始喵喵牌抽卡"]
+    },
+    "喵喵牌抽卡寻找_第二排": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^[0-8]/9$"],
+                "roi": [119, 655, 536, 56]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {"target_offset": [16, -86, 9, 27]}
+        },
         "next": ["开始喵喵牌抽卡"]
     },
     "开始喵喵牌抽卡": {
@@ -36,23 +69,39 @@
             "type": "Click",
             "param": {}
         },
-        "next": ["是否集齐9个徽章", "[JumpBack]喵喵牌再抽一次"]
+        "timeout": 10000,
+        "next": ["是否集齐9个徽章", "[JumpBack]喵喵牌再抽一次_Check"]
     },
     "是否集齐9个徽章": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": ["9"],
-                "roi": [558, 971, 18, 26]
+                "replace": ["g", "9"],
+                "roi": [525, 943, 62, 80]
             }
         },
         "action": {
             "type": "DoNothing",
             "param": {}
         },
-        "next": ["stop"]
+        "next": ["收下徽章"]
     },
-    "喵喵牌再抽一次": {
+    "收下徽章": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["收下"],
+                "roi": [165, 1040, 147, 88]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": []
+    },
+    "喵喵牌再抽一次_Check": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -64,6 +113,15 @@
             "type": "Click",
             "param": {}
         },
+        "timeout": 4000,
+        "next": ["是否集齐9个徽章", "喵喵牌再抽一次_Action"]
+    },
+    "喵喵牌再抽一次_Action": {
+        "action": {
+            "type": "Click",
+            "param": {"target": "喵喵牌再抽一次_Check"}
+        },
+        "max_hit": 30,
         "next": []
     }
 }
