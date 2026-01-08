@@ -38,7 +38,7 @@ export default defineConfig({
     description: "MaaLYSK Documentation",
     // 静态资源引用
     head: [
-        ["link", {rel: "icon", href: "/MaaLYSK/logo.ico"}],
+        ["link", {rel: "icon", href: "/logo.ico"}],
         // 引入 RemixIcon 图标库 CSS
         [
             "link",
