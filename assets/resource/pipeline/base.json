@@ -84,32 +84,44 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": [319, 1185, 52, 38],
+                "roi": [376, 1187, 53, 39],
                 "expected": ["作战", "作", "战"]
             }
         },
         "action": {
             "type": "Click",
             "param": {
-                "target": [338, 1175, 16, 14]
+                "target": [395, 1178, 17, 15]
             }
         },
         "post_delay": 2000,
-        "next": []
+        "next": ["作战页面确认"]
     },
-
+    "作战页面确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["作战", "作", "战"],
+                "roi": [144, 94, 186, 134]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
     "点击约会": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": [203, 1198, 55, 33],
+                "roi": [271, 1198, 56, 34],
                 "expected": ["约会", "约", "会"]
             }
         },
         "action": {
             "type": "Click",
             "param": {
-                "target": [224, 1186, 12, 10]
+                "target": [302, 1190, 13, 16]
             }
         },
         "post_delay": 2000,
@@ -119,14 +131,14 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "roi": [430, 1197, 55, 26],
+                "roi": [472, 1198, 56, 27],
                 "expected": ["思念", "思", "念"]
             }
         },
         "action": {
             "type": "Click",
             "param": {
-                "target": [459, 1186, 9, 7]
+                "target": [504, 1186, 10, 8]
             }
         },
         "post_delay": 4000,

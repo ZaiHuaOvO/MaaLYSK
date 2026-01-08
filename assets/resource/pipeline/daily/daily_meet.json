@@ -24,20 +24,9 @@
                 "target": [320, 588, 19, 22]
             }
         },
-        "next": ["[JumpBack]主页面互动点击"]
-    },
-    "主页面互动点击": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [320, 588, 19, 22]
-            }
-        },
-        "post_delay": 2000,
-        "max_hit": 10
+        "repeat": 10,
+        "repeat_delay": 1000,
+        "post_delay": 5000,
+        "next": ["stop"]
     }
 }

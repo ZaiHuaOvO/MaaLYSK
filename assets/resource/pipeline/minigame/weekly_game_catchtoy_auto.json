@@ -115,7 +115,6 @@
             "[JumpBack]抓娃娃蓝色按钮"
         ]
     },
-
     "娃娃机点击空白继续": {
         "recognition": {
             "type": "OCR",
@@ -126,9 +125,9 @@
         },
         "action": {
             "type": "Click",
-            "param": {"target": [19, 936, 12, 13]}
+            "param": {"target": [112, 1140, 3, 3]}
         },
-        "next": ["是否娃娃机页面", "[JumpBack]退出点击popop"]
+        "next": ["是否娃娃机页面", "[JumpBack]退出点击1popop"]
     },
     "过剧情": {
         "recognition": {
@@ -174,7 +173,7 @@
                 "target": [323, 1146, 13, 14]
             }
         },
-        "pre_delay": 500,
+        "pre_delay": 2000,
         "post_delay": 1000,
         "next": ["抓娃娃绿色按钮"]
     },
