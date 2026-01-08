@@ -64,17 +64,17 @@
 
 ## 使用说明
 
-- [快速开始](/zh_cn/manual/1.1-快速开始.md) - 使用前必看，快速配置和启动
-- [功能介绍(建设中)](/zh_cn/manual/1.2-功能介绍.md) - 详细的功能说明和使用技巧
-- [图文教程](/zh_cn/manual/1.3-图文教程.md) - 专为小白编写的手把手教程
-- [常见问题(建设中)](/zh_cn/manual/2.1-常见问题.md) - 遇到问题先看里
+- [快速开始](http://maalysk.top/zh_cn/manual/1.1) - 使用前必看，快速配置和启动
+- [功能介绍(建设中)](http://maalysk.top/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
+- [图文教程](http://maalysk.top/zh_cn/manual/1.3) - 专为小白编写的手把手教程
+- [常见问题(建设中)](http://maalysk.top/zh_cn/manual/2.1) - 遇到问题先看里
 
 ## 开发相关
 
-- [零基础开发指南](/zh_cn/develop/0.0-MaaLYSK零基础开发指南.md) - 环境配置与开发流程
-- [开发规范(建设中)](/zh_cn/develop/1.1-MaaLYSK开发规范.md) - 代码规范说明
-- [文档编写(建设中)](/zh_cn/develop/2.2-文档编写.md) - 关于Markdown文档编写的规范和说明
-- [文档站开发指南](/zh_cn/develop/2.1-文档站开发指南.md) - 关于文档站开发的规范和说明
+- [零基础开发指南](http://maalysk.top/zh_cn/develop/0.0) - 环境配置与开发流程
+- [开发规范(建设中)](http://maalysk.top/zh_cn/develop/1.1) - 代码规范说明
+- [文档站开发指南](http://maalysk.top/zh_cn/develop/2.1) - 关于文档站开发的规范和说明
+- [文档编写(建设中)](http://maalysk.top/zh_cn/develop/2.2) - 关于Markdown文档编写的规范和说明
 
 ## 加入我们
 
