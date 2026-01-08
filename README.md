@@ -7,8 +7,6 @@
 
   由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
-  图形界面基于 **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)**。
-
   <a href="https://github.com/Witty36/MaaLYSK" target="_blank" style="font-weight: bold;">🔗 本项目 GitHub 仓库</a><br>
 
   🌟喜欢MaaLYSK就在仓库右上角点个星星吧🌟
@@ -22,7 +20,7 @@
     <img alt="stars" src="https://img.shields.io/github/stars/Witty36/MaaLYSK?style=social">
     <img alt="downloads" src="https://img.shields.io/github/downloads/Witty36/MaaLYSK/total?style=social">
   </div>
-  
+
   <br>
 
   [简体中文]
@@ -60,56 +58,24 @@
 - 周末时耗空过期体力
 - 活动时消耗体力道具以达到300体
 
-## 使用事项
-
-- 本项目仅支持模拟器（推荐MuMu模拟器12）
-- 模拟器请确保关闭`后台保活运行`
-- 模拟器建议设置为`16:9`的比例的分辨率，该比例典型的分辨率有`3840*2160 (4K)`、`2560*1440 (2K)`、`1920*1080 (1080P)`、`1280*720 (720P)`。
-- 页面需为**简体中文**，且必须在**主页面**启动本项目
-- 目前`✈️启动/关闭游戏`只支持恋与深空官服
-- 目前只支持`win-x86`机型，mac、Linux及win-arm等机型还要等待后续适配测试
-- 如有其他**问题**或**新需求**可以提交issue或者加群反馈 **1065676561**，感谢！
-
 ## 下载方式
 
 下载地址：[Releases](https://github.com/Witty36/MaaLYSK/releases)
 
-### Windows
-
-#### 环境要求
-
-- [`Visual C++ 可再发行程序包`](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-- [`.NET 桌面运行时 10（.NET Desktop Runtime 10.0.0）`](https://dotnet.microsoft.com/en-us/download/dotnet/10.0#:~:text=Binaries-,Windows,-x64)
-
-可执行项目文件夹目录下的`DependencySetup_ 依赖库安装_ win.bat`文件进行环境安装，等待安装完成后并重启计算机（该步骤仅需一次）
-
-若安装失败可点击上方链接跳转并逐个安装。
-
-#### 下载步骤
-
-- 对于绝大部分用户，请下载 `MaaLYSK-win-x86_64-vx.x.x.zip`并解压在非C盘的非中文路径下。推荐解压路径如：`D:\MaaLYSK`
-- 若确定自己的电脑是 arm 架构，请下载 `MaaLYSK-win-aarch64-vx.x.x.zip`（测试中）
-- 解压后运行`MaaPiCli.exe`（命令行）或`MaaLYSK.exe`（图形化界面）即可
-
-### MacOS
-
-待测试并补充。
-
-### Linux
-
-~~会用 Linux 的大佬应该不需要教程~~
-
 ## 使用说明
 
- ❗勾选任务前请阅读**任务说明**，防止不符合你的预期。
-
-![](https://api.flowersink.com/img/MaaLYSK%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.png)
+- [快速开始](http://maalysk.top/zh_cn/manual/1.1) - 使用前必看，快速配置和启动
+- [功能介绍(建设中)](http://maalysk.top/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
+- [图文教程](http://maalysk.top/zh_cn/manual/1.3) - 专为小白编写的手把手教程
+- [常见问题(建设中)](http://maalysk.top/zh_cn/manual/2.1) - 遇到问题先看这里
 
 ## 开发相关
 
-更多文档请前往 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 主仓库查看
+- [零基础开发指南](http://maalysk.top/zh_cn/develop/0.0) - 环境配置与开发流程
+- [开发规范(建设中)](http://maalysk.top/zh_cn/develop/1.1) - 代码规范说明
+- [文档编写规范](http://maalysk.top/zh_cn/develop/2.1) - 关于Markdown文档编写的规范和说明
 
-## Join us
+## 加入我们
 
 - MaaLYSK 交流 QQ 群：暂无
 - MaaLYSK 开发 QQ 群：1065676561
@@ -118,8 +84,17 @@
 
 ## 鸣谢
 
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！  
-UI 由 [MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)大力支持！
+### 核心框架
+
+- [MaaFramework](https://github.com/MaaXYZ/MaaFramework)
+  基于图像识别的自动化黑盒测试框架 | An automation black-box testing framework based on image recognition
+
+### UI支持
+
+- [MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)
+  基于 Avalonia UI 构建的 MaaFramework 通用 GUI 解决方案
+
+### 开发者
 
 感谢以下开发者对本项目作出的贡献：
 
