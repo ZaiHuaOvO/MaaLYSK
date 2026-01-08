@@ -33,7 +33,7 @@ function getSidebar(langDir: string, subDir: string) {
 }
 
 export default defineConfig({
-    base: "/MaaLYSK/",
+    base: "/",
     title: "MaaLYSK",
     description: "MaaLYSK Documentation",
     // 静态资源引用
