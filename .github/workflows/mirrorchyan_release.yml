@@ -12,7 +12,7 @@ on:
 jobs:
   mirrorchyan:
     runs-on: macos-latest
-    # if: ${{ github.repository_owner == 'Witty36' }}
+    if: ${{ github.repository_owner == 'Witty36' }}
     strategy:
       fail-fast: false
       matrix:
