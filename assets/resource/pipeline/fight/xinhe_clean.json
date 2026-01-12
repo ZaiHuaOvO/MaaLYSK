@@ -132,7 +132,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": ["确认.png"],
-                "roi": [418, 967, 116, 53]
+                "roi": [387, 939, 179, 150]
             }
         },
         "action": {
