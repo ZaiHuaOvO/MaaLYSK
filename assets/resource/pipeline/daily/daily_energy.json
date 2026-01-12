@@ -32,7 +32,7 @@
         "next": ["[JumpBack]体力领取1", "[JumpBack]体力领取2"],
         "timeout": 2000,
         "focus": {
-            "Node.NextList.Failed": "无可领取体力,请检查时间"
+            "Node.PipelineNode.Failed": "无可领取体力,请检查时间"
         }
     },
     "体力领取1": {
