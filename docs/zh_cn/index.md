@@ -1,101 +1,28 @@
-<div align="center">
-  <img alt="LOGO" src="https://api.flowersink.com/img/MaaLYSK_logo.png" width="256" height="256" />
+---
+layout: home
 
-# MaaLYSK
+hero:
+  name: MaaLYSK
+  text: 恋与深空小助手
+  tagline: >
+    基于全新架构 MaaFrameWork 的日常 / 肝活小助手。
+    图像技术 + 模拟控制，解放双手！
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /zh_cn/manual/1.1.html
+    - theme: alt
+      text: 项目地址
+      link: https://github.com/Witty36/MaaLYSK
 
-  基于全新架构的**恋与深空**日常/肝活小助手。图像技术 + 模拟控制，解放双手！
-
-  由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
-
-  <a href="https://github.com/Witty36/MaaLYSK" target="_blank" style="font-weight: bold;">🔗 本项目 GitHub 仓库</a><br>
-
-  🌟喜欢MaaLYSK就在仓库右上角点个星星吧🌟
-
-  <div style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin-top: 10px;width:75%">
-    <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
-    <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blueviolet">
-    <img alt=".NET" src="https://img.shields.io/badge/.NET-≥%2010-512BD4?logo=csharp">
-    <img alt="license" src="https://img.shields.io/github/license/Witty36/MaaLYSK">
-    <img alt="commit" src="https://img.shields.io/github/commit-activity/m/Witty36/MaaLYSK">
-    <img alt="stars" src="https://img.shields.io/github/stars/Witty36/MaaLYSK?style=social">
-    <img alt="downloads" src="https://img.shields.io/github/downloads/Witty36/MaaLYSK/total?style=social">
-  </div>
-
-  <br>
-
-  [简体中文]
-</div>
-
-## 免责条款
-
-- 本资源按“现状”提供，不附带任何形式的明示或暗示担保。使用者需自行承担所有风险。
-- 作者不对因使用本资源而导致的任何直接、间接或结果性损失承担责任。
-- 本资源为独立组件，其MIT许可证不传染，也不受与之集成的其他软件许可证的影响。
-- 基于本资源进行的任何商业行为均与原作者无关，使用者不得暗示任何官方关联或认可。
-
-## 功能列表
-
-### **🌿日常一条龙**
-
-- ✈️启动/关闭游戏
-- ♻切换账号
-- 🍰领日常体力
-- 📬领好友体力
-- 🛍️商城日常领取（每日礼包）
-- 🛒商城周常领取（每周礼包，快乐小铺的极空许愿券和辉耀磁石）
-- 🌌星间探测
-- ⚔️芯核狩猎一次（暂时只支持狩猎一次，按当天开放的芯核区追击）
-- ⚔️日常追踪豆佬
-- ⚔️日常追踪哈特（默认消耗完体力）
-- 🍂日常思念升级一次（会消耗一个绿瓶子，如果排序不当或网卡可能会升级四星/三星卡，介意勿勾选）
-- 💞主页面互动
-- 📅日常收尾
-
-### **⭐待开发功能（暂未施工，未来可期）**
-
-- 喵喵牌 娃娃机（周常）
-- 陪我一起----运动、睡觉、学习等活动
-- 周末时耗空过期体力
-- 活动时消耗体力道具以达到300体
-
-## 下载方式
-
-下载地址：[Releases](https://github.com/Witty36/MaaLYSK/releases)
-
-## 使用说明
-
-- [快速开始](/zh_cn/manual/1.1) - 使用前必看，快速配置和启动
-- [功能介绍(建设中)](/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
-- [图文教程](/zh_cn/manual/1.3) - 专为小白编写的手把手教程
-- [常见问题(建设中)](/zh_cn/manual/2.1) - 遇到问题先看里
-
-## 开发相关
-
-- [零基础开发指南](/zh_cn/develop/0.0) - 环境配置与开发流程
-- [开发规范(建设中)](/zh_cn/develop/1.1) - 代码规范说明
-- [文档编写规范](/zh_cn/develop/2.1) - 文档编写说明
-
-## 加入我们
-
-- MaaLYSK 交流 QQ 群：暂无
-- MaaLYSK 开发 QQ 群：1065676561
-- 作者个人联系方式（QQ)：3044760489（如果有意向加入开发欢迎联系我！）
-- MaaFramework 开发交流 QQ 群: 595990173
-
-## 鸣谢
-
-### 核心框架
-
-- [MaaFramework](https://github.com/MaaXYZ/MaaFramework)
-  基于图像识别的自动化黑盒测试框架 | An automation black-box testing framework based on image recognition
-
-### UI支持
-
-- [MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)
-  基于 Avalonia UI 构建的 MaaFramework 通用 GUI 解决方案
-
-### 开发者
-
-感谢以下开发者对本项目作出的贡献：
-
-[![Contributors](https://contrib.rocks/image?repo=Witty36/MaaLYSK&max=1000)](https://github.com/Witty36/MaaLYSK/graphs/contributors)
+features:
+  - icon: 🤖
+    title: 自动化助手
+    details: 基于图像识别与状态判断，自动完成日常任务与重复操作。
+  - icon: 🧠
+    title: MaaFrameWork 架构
+    details: 高可扩展、模块化设计，方便维护与二次开发。
+  - icon: 🚀
+    title: 解放双手
+    details: 稳定运行，减少人工干预，把时间还给你。
+---
