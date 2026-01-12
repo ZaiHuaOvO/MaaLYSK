@@ -48,7 +48,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/芯核今日未开放.png"],
+                "template": ["fight/xinhe/芯核今日未开放.png"],
                 "roi": [138, 546, 48, 58],
                 "green_mask": true
             }
@@ -69,7 +69,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/芯核今日未开放.png"],
+                "template": ["fight/xinhe/芯核今日未开放.png"],
                 "roi": [421, 581, 38, 45],
                 "green_mask": true
             }
@@ -90,7 +90,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/芯核今日未开放.png"],
+                "template": ["fight/xinhe/芯核今日未开放.png"],
                 "roi": [431, 874, 47, 44],
                 "green_mask": true
             }
@@ -111,7 +111,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["fight/芯核是否解锁.png"],
+                "template": ["fight/xinhe/芯核是否解锁.png"],
                 "roi": [93, 874, 51, 121]
             }
         },

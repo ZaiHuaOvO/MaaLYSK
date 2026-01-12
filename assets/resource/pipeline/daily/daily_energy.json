@@ -20,7 +20,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["补给.png"],
+                "template": ["energy/补给.png"],
                 "roi": [498, 1159, 179, 137]
             }
         },
@@ -39,7 +39,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["体力领取.png", "免费补领.png"],
+                "template": ["energy/体力领取.png", "energy/免费补领.png"],
                 "roi": [432, 823, 162, 64]
             }
         },
@@ -56,7 +56,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["体力领取.png", "免费补领.png"],
+                "template": ["energy/体力领取.png", "energy/免费补领.png"],
                 "roi": [141, 1004, 160, 57]
             }
         },
@@ -73,7 +73,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["体力领取成功.png"],
+                "template": ["energy/体力领取成功.png"],
                 "roi": [239, 474, 257, 281]
             }
         },

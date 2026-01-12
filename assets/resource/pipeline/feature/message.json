@@ -111,6 +111,7 @@
         "focus": {
             "Node.Action.Succeeded": "开始读祁煜短信"
         },
+        "timeout": 35000,
         "next": [
             "[JumpBack]选择第一条短信",
             "[JumpBack]发送短信",
@@ -136,6 +137,7 @@
         "focus": {
             "Node.Action.Succeeded": "开始读沈星回短信"
         },
+        "timeout": 35000,
         "next": [
             "[JumpBack]选择第一条短信",
             "[JumpBack]发送短信",
@@ -161,6 +163,7 @@
         "focus": {
             "Node.Action.Succeeded": "开始读黎深短信"
         },
+        "timeout": 35000,
         "next": [
             "[JumpBack]选择第一条短信",
             "[JumpBack]发送短信",
@@ -186,6 +189,7 @@
         "focus": {
             "Node.Action.Succeeded": "开始读秦彻短信"
         },
+        "timeout": 35000,
         "next": [
             "[JumpBack]选择第一条短信",
             "[JumpBack]发送短信",
@@ -211,6 +215,7 @@
         "focus": {
             "Node.Action.Succeeded": "开始读夏以昼短信"
         },
+        "timeout": 35000,
         "next": [
             "[JumpBack]选择第一条短信",
             "[JumpBack]发送短信",
@@ -233,7 +238,7 @@
         },
         "pre_delay": 500,
         "timeout": 5000,
-        "next": ["发送短信"]
+        "next": []
     },
     "发送短信": {
         "recognition": {

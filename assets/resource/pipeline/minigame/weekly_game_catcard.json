@@ -1,5 +1,5 @@
 {
-    "进入娃娃机": {
+    "进入喵喵牌": {
         "recognition": {
             "type": "DirectHit",
             "param": {}
@@ -9,17 +9,17 @@
             "param": {}
         },
         "next": [
-            "娃娃机_点击快乐出游",
+            "喵喵牌_点击快乐出游",
             "[JumpBack]点击约会",
             "[JumpBack]返回上一级页面",
             "[JumpBack]导航回主页面"
         ]
     },
-    "娃娃机_点击快乐出游": {
+    "喵喵牌_点击快乐出游": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/快乐出游.png"],
+                "template": ["minigame/快乐出游.png"],
                 "roi": [152, 539, 122, 122]
             }
         },
@@ -32,18 +32,18 @@
         },
         "post_delay": 400,
         "next": [
-            "[JumpBack]娃娃机_选择沈星回",
-            "[JumpBack]娃娃机_选择黎深",
-            "[JumpBack]娃娃机_选择祁煜",
-            "[JumpBack]娃娃机_选择秦彻",
-            "[JumpBack]娃娃机_选择夏以昼"
+            "[JumpBack]喵喵牌_选择沈星回",
+            "[JumpBack]喵喵牌_选择黎深",
+            "[JumpBack]喵喵牌_选择祁煜",
+            "[JumpBack]喵喵牌_选择秦彻",
+            "[JumpBack]喵喵牌_选择夏以昼"
         ]
     },
-    "娃娃机_选择沈星回": {
+    "喵喵牌_选择沈星回": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/沈星回.png"],
+                "template": ["minigame/沈星回.png"],
                 "roi": [196, 193, 99, 106]
             }
         },
@@ -53,13 +53,13 @@
         },
         "enabled": true,
         "max_hit": 1,
-        "next": ["进入娃娃机页面"]
+        "next": ["进入喵喵牌页面"]
     },
-    "娃娃机_选择黎深": {
+    "喵喵牌_选择黎深": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/黎深.png"],
+                "template": ["minigame/黎深.png"],
                 "roi": [380, 411, 122, 114]
             }
         },
@@ -69,13 +69,13 @@
         },
         "enabled": true,
         "max_hit": 1,
-        "next": ["进入娃娃机页面"]
+        "next": ["进入喵喵牌页面"]
     },
-    "娃娃机_选择祁煜": {
+    "喵喵牌_选择祁煜": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/祁煜.png"],
+                "template": ["minigame/祁煜.png"],
                 "roi": [186, 624, 118, 111]
             }
         },
@@ -85,13 +85,13 @@
         },
         "enabled": true,
         "max_hit": 1,
-        "next": ["进入娃娃机页面"]
+        "next": ["进入喵喵牌页面"]
     },
-    "娃娃机_选择秦彻": {
+    "喵喵牌_选择秦彻": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/秦彻.png"],
+                "template": ["minigame/秦彻.png"],
                 "roi": [422, 819, 110, 111]
             }
         },
@@ -101,13 +101,13 @@
         },
         "enabled": true,
         "max_hit": 1,
-        "next": ["进入娃娃机页面"]
+        "next": ["进入喵喵牌页面"]
     },
-    "娃娃机_选择夏以昼": {
+    "喵喵牌_选择夏以昼": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/夏以昼.png"],
+                "template": ["minigame/夏以昼.png"],
                 "roi": [202, 1013, 94, 106]
             }
         },
@@ -117,104 +117,85 @@
         },
         "enabled": true,
         "max_hit": 1,
-        "next": ["进入娃娃机页面"]
+        "next": ["进入喵喵牌页面"]
     },
-    "进入娃娃机页面": {
+    "进入喵喵牌页面": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/娃娃机进入.png"],
-                "roi": [396, 358, 156, 98]
+                "template": ["minigame/catcard/喵喵牌进入.png"],
+                "roi": [154, 733, 123, 82]
             }
         },
         "action": {
             "type": "Click",
             "param": {
-                "target": [451, 431, 18, 13]
+                "target_offset": [10, 10, -20, -20]
             }
         },
         "pre_delay": 500,
         "post_delay": 1000,
         "post_wait_freezes": 500,
-        "next": ["确认选好平衡捕手", "[JumpBack]选择平衡捕手"]
+        "next": ["检查喵喵牌次数", "[JumpBack]喵喵牌出发"]
     },
-    "确认选好平衡捕手": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "lower": [187, 106, 89],
-                "upper": [207, 126, 109],
-                "roi": [350, 877, 269, 93],
-                "count": 500
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"]
-    },
-    "选择平衡捕手": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": ["weekly/平衡捕手.png"],
-                "roi": [385, 904, 188, 45]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {"target": [483, 919, 21, 13]}
-        },
-        "next": []
-    },
-    "娃娃机是否上限": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["0"],
-                "roi": [399, 1193, 18, 22]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "next": ["娃娃机切换人物", "[JumpBack]返回上一级页面"]
-    },
-    "娃娃机出发": {
+    "喵喵牌出发": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": ["出发", "出", "发"],
-                "roi": [314, 1105, 93, 51]
+                "roi": [511, 1062, 91, 45]
             }
         },
         "action": {
             "type": "Click",
             "param": {}
         },
-        "next": ["娃娃机游戏中页面"]
+        "next": ["囤积达上限继续", "喵喵牌游戏中页面"]
     },
-    "娃娃机游戏中页面": {
+    "囤积达上限继续": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": ["自动", "自", "动"],
-                "roi": [473, 1203, 33, 18]
+                "expected": ["确定"],
+                "roi": [449, 678, 63, 30]
+            }
+        },
+        "action": {"type": "Click", "param": {}},
+        "next": ["喵喵牌游戏中页面"]
+    },
+    "检查喵喵牌次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["0"],
+                "roi": [586, 1139, 14, 20]
+            }
+        },
+        "action": {"type": "DoNothing", "param": {}},
+        "next": ["喵喵牌切换人物", "[JumpBack]返回上一级页面"]
+    },
+    "喵喵牌游戏中页面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "minigame/catcard/喵喵牌游戏中确认.png",
+                    "minigame/catcard/喵喵牌游戏中确认1.png"
+                ],
+                "roi": [282, 503, 157, 94]
             }
         },
         "action": {
             "type": "DoNothing",
             "param": {}
         },
-        "next": ["点击自动"]
+        "next": ["喵喵牌返回"]
     },
-    "娃娃机返回": {
+    "喵喵牌返回": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/娃娃机返回.png"],
+                "template": ["minigame/catcard/喵喵牌返回.png"],
                 "roi": [0, 0, 88, 132]
             }
         },
@@ -224,9 +205,9 @@
                 "target": [26, 63, 8, 9]
             }
         },
-        "next": ["娃娃机确定退出", "娃娃机点击空白继续"]
+        "next": ["喵喵牌确定退出"]
     },
-    "娃娃机确定退出": {
+    "喵喵牌确定退出": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -238,14 +219,14 @@
             "type": "Click",
             "param": {}
         },
-        "next": ["是否娃娃机页面", "[JumpBack]退出点击popop"]
+        "next": ["是否喵喵牌页面", "[JumpBack]退出点击popop"]
     },
-    "是否娃娃机页面": {
+    "是否喵喵牌页面": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/娃娃机页面确认.png"],
-                "roi": [211, 554, 257, 218]
+                "template": ["minigame/catcard/喵喵牌页面确认.png"],
+                "roi": [433, 402, 144, 141]
             }
         },
         "action": {
@@ -253,11 +234,11 @@
             "param": {}
         }
     },
-    "娃娃机切换人物": {
+    "喵喵牌切换人物": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["weekly/切换人物.png"],
+                "template": ["minigame/切换人物.png"],
                 "roi": [673, 146, 40, 41]
             }
         },

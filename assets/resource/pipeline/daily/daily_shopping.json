@@ -28,9 +28,9 @@
             "param": {}
         },
         "post_delay": 500,
-        "next": ["日常_商城向下滑1"]
+        "next": ["日常_商城向下滑"]
     },
-    "日常_商城向下滑1": {
+    "日常_商城向下滑": {
         "recognition": {
             "type": "DirectHit",
             "param": {}
@@ -45,23 +45,8 @@
         },
         "pre_delay": 500,
         "post_delay": 1000,
-        "next": ["日常_商城向下滑2"]
-    },
-    "日常_商城向下滑2": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [41, 1146, 1, 1],
-                "end": [37, 307, 1, 1],
-                "duration": 800
-            }
-        },
-        "post_wait_freezes": 500,
-        "post_delay": 2000,
+        "repeat": 3,
+        "repeat_delay": 500,
         "timeout": 5000,
         "next": ["商城每日礼包"]
     },
@@ -69,7 +54,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城每日免费礼包.png"],
+                "template": ["shopping/daily/商城每日免费礼包.png"],
                 "roi": [60, 279, 583, 926],
                 "order_by": "Score",
                 "threshold": [0.85]
@@ -86,7 +71,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城免费点击.png"],
+                "template": ["shopping/商城免费点击.png"],
                 "roi": [257, 893, 206, 59],
                 "threshold": [0.45]
             }
@@ -131,7 +116,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["是否商城页面.png"],
+                "template": ["shopping/是否商城页面.png"],
                 "roi": [91, 187, 48, 61],
                 "threshold": [0.45]
             }
@@ -140,6 +125,6 @@
             "type": "DoNothing",
             "param": {}
         },
-        "next": ["stop"]
+        "next": []
     }
 }

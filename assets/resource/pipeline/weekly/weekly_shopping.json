@@ -28,26 +28,9 @@
             "param": {}
         },
         "post_delay": 500,
-        "next": ["周常_商城向下滑1"]
+        "next": ["周常_商城向下滑"]
     },
-    "周常_商城向下滑1": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [41, 1146, 1, 1],
-                "end": [37, 307, 1, 1],
-                "duration": 800
-            }
-        },
-        "pre_delay": 1000,
-        "post_delay": 1000,
-        "next": ["周常_商城向下滑2"]
-    },
-    "周常_商城向下滑2": {
+    "周常_商城向下滑": {
         "recognition": {
             "type": "DirectHit",
             "param": {}
@@ -63,6 +46,8 @@
         "pre_delay": 1000,
         "post_wait_freezes": 500,
         "post_delay": 2000,
+        "repeat": 2,
+        "repeat_delay": 500,
         "timeout": 5000,
         "focus": {
             "Node.PipelineNode.Failed": "[color:red]无每周礼包可领取[/color]"
@@ -74,7 +59,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城每周免费礼包.png"],
+                "template": ["shopping/weekly/商城每周免费礼包.png"],
                 "roi": [60, 279, 583, 926],
                 "order_by": "Score"
             }
@@ -90,7 +75,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商城免费点击.png"],
+                "template": ["shopping/商城免费点击.png"],
                 "roi": [254, 882, 224, 90],
                 "threshold": [0.5]
             }
@@ -181,7 +166,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["快乐巧克力.png"],
+                "template": ["shopping/weekly/快乐巧克力.png"],
                 "roi": [632, 54, 41, 38]
             }
         },
@@ -205,7 +190,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["极空许愿券.png"],
+                "template": ["shopping/weekly/极空许愿券.png"],
                 "roi": [46, 376, 312, 176]
             }
         },
@@ -219,7 +204,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/商店购买.png"],
                 "roi": [256, 743, 215, 68]
             }
         },
@@ -237,7 +222,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["辉耀磁石.png"],
+                "template": ["shopping/weekly/辉耀磁石.png"],
                 "roi": [46, 376, 312, 176]
             }
         },
@@ -251,7 +236,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["加号.png"],
+                "template": ["shopping/加号.png"],
                 "roi": [556, 685, 37, 36]
             }
         },
@@ -265,7 +250,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/商店购买.png"],
                 "roi": [251, 814, 220, 65],
                 "threshold": [0.6]
             }
@@ -303,7 +288,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["记忆心砂_稀有.png"],
+                "template": ["shopping/weekly/记忆心砂_稀有.png"],
                 "roi": [632, 54, 41, 38]
             }
         },
@@ -316,13 +301,13 @@
             "Node.PipelineNode.Failed": "[color:red]心砂商店没有可购买物品[/color]"
         },
         "timeout": 5000,
-        "next": ["紫砂_极空许愿券"]
+        "next": ["[JumpBack]紫砂_极空许愿券", "[JumpBack]蓝砂_加速魔方"]
     },
     "紫砂_极空许愿券": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["紫砂购买.png"],
+                "template": ["shopping/weekly/紫砂许愿券购买.png"],
                 "roi": [513, 449, 87, 42]
             }
         },
@@ -330,13 +315,30 @@
             "type": "Click",
             "param": {"target": [545, 465, 18, 11]}
         },
-        "next": ["[JumpBack]购买五个", "紫砂极空许愿券领取"]
+        "max_hit": 1,
+        "next": ["购买五个"]
     },
+    "蓝砂_加速魔方": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["shopping/weekly/蓝砂加速魔方购买.png"],
+                "roi": [168, 432, 503, 252]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "max_hit": 1,
+        "next": ["购买十个"]
+    },
+
     "购买五个": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["加号.png"],
+                "template": ["shopping/加号.png"],
                 "roi": [556, 685, 37, 36]
             }
         },
@@ -346,14 +348,33 @@
         },
         "pre_delay": 500,
         "post_delay": 500,
-        "max_hit": 7,
-        "next": []
+        "max_hit": 1,
+        "repeat": 7,
+        "next": ["紫砂许愿券点击购买"]
     },
-    "紫砂极空许愿券领取": {
+    "购买十个": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["商店购买.png"],
+                "template": ["shopping/加号.png"],
+                "roi": [556, 685, 37, 36]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 500,
+        "post_delay": 1000,
+        "max_hit": 1,
+        "repeat": 13,
+        "next": ["蓝砂加速魔方点击购买"]
+    },
+    "紫砂许愿券点击购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["shopping/商店购买.png"],
                 "roi": [252, 798, 221, 66]
             }
         },
@@ -363,6 +384,22 @@
         },
         "post_delay": 1000,
         "focus": "心砂_珍贵极空许愿券购买成功",
+        "next": ["是否商城页面", "[JumpBack]退出领取点击popop"]
+    },
+    "蓝砂加速魔方点击购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["shopping/商店购买.png"],
+                "roi": [252, 798, 221, 66]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "focus": "心砂_稀有加速魔方购买成功",
         "next": ["是否商城页面", "[JumpBack]退出领取点击popop"]
     }
 }
