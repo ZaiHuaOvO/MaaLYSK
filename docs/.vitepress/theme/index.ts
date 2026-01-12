@@ -1,7 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import {h} from "vue";
 import BackToTop from "./components/BackToTop.vue";
-
+import "./custom.css";
 export default {
     extends: DefaultTheme,
 
