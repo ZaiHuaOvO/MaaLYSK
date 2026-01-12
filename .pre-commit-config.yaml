@@ -2,6 +2,8 @@ default_install_hook_types: [pre-commit, prepare-commit-msg]
 ci:
   autofix_commit_msg: "chore: Auto update by pre-commit hooks [skip changelog]"
   autofix_prs: true
+autofix:
+  enabled: true
 repos:
   - repo: https://github.com/shssoichiro/oxipng
     rev: v9.1.2
@@ -22,4 +24,5 @@ repos:
         files: ^docs/.*|^README\.md$
         types:
           - markdown
-        args: ["--fix", "--config", "docs/.markdownlint.yaml", "#**/node_modules"]
+        args:
+          ["--fix", "--config", "docs/.markdownlint.yaml", "#**/node_modules"]

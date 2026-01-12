@@ -93,8 +93,9 @@
         },
         "pre_delay": 1000,
         "post_delay": 1000,
-        "repeat": 3,
-        "next": ["焕梦映此限时领取"]
+        "timeout": 3000,
+        "next": ["焕梦映此限时领取"],
+        "on_error": ["焕梦映此菜单"]
     },
     "焕梦映此限时领取": {
         "recognition": {
@@ -154,8 +155,9 @@
             "type": "Click",
             "param": {}
         },
-        "repeat": 3,
-        "next": ["[JumpBack]剪影裁诗限时领取"]
+        "timeout": 3000,
+        "next": ["[JumpBack]剪影裁诗限时领取"],
+        "on_error": ["剪影裁诗菜单"]
     },
     "剪影裁诗限时领取": {
         "recognition": {
