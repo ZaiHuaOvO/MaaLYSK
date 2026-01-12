@@ -54,7 +54,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["星间探测_结束探测.png"],
+                "template": ["star_detection/星间探测_结束探测.png"],
                 "roi": [474, 1011, 56, 56]
             }
         },
@@ -62,13 +62,13 @@
             "type": "Click",
             "param": {}
         },
-        "next": ["确认结束探测"]
+        "next": ["确定结束探测"]
     },
-    "确认结束探测": {
+    "确定结束探测": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["星间探测_确定.png"],
+                "template": ["确定.png"],
                 "roi": [379, 698, 207, 74]
             }
         },
@@ -154,7 +154,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["星间探测_确定.png"],
+                "template": ["确定.png"],
                 "roi": [384, 637, 186, 56]
             }
         },
@@ -190,7 +190,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["星间探测_确定.png"],
+                "template": ["确定.png"],
                 "roi": [384, 637, 186, 56]
             }
         },

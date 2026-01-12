@@ -17,18 +17,8 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": [
-                    "沈星回",
-                    "黎深",
-                    "祁煜",
-                    "夏以昼",
-                    "星",
-                    "深",
-                    "祁",
-                    "以",
-                    "秦彻"
-                ],
-                "roi": [73, 749, 121, 47]
+                "expected": ["点击空白区域继续", "空白区域", "空白", "继续"],
+                "roi": [239, 1096, 247, 176]
             }
         },
         "action": {
@@ -36,5 +26,22 @@
             "param": {}
         },
         "next": []
+    },
+    "NodeC": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": [
+            "娃娃机点击空白继续",
+            "男主抓娃娃",
+            "[JumpBack]我想接着抓",
+            "[JumpBack]过剧情",
+            "[JumpBack]抓娃娃蓝色按钮"
+        ]
     }
 }

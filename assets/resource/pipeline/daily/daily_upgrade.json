@@ -50,7 +50,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": ["思念升级材料选择.png"],
+                "template": ["task/daily/思念升级材料选择.png"],
                 "roi": [99, 1132, 87, 89]
             }
         },
