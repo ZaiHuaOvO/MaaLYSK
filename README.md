@@ -11,7 +11,7 @@
 
   🌟喜欢MaaLYSK就在仓库右上角点个星星吧🌟
 
-  <div style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin-top: 10px;width:75%">
+  <div style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin-top: 10px;width:50%">
     <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
     <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blueviolet">
     <img alt=".NET" src="https://img.shields.io/badge/.NET-≥%2010-512BD4?logo=csharp">
@@ -33,30 +33,9 @@
 - 本资源为独立组件，其MIT许可证不传染，也不受与之集成的其他软件许可证的影响。
 - 基于本资源进行的任何商业行为均与原作者无关，使用者不得暗示任何官方关联或认可。
 
-## 功能列表
-
-### **🌿日常一条龙**
-
-- ✈️启动/关闭游戏
-- ♻切换账号
-- 🍰领日常体力
-- 📬领好友体力
-- 🛍️商城日常领取（每日礼包）
-- 🛒商城周常领取（每周礼包，快乐小铺的极空许愿券和辉耀磁石）
-- 🌌星间探测
-- ⚔️芯核狩猎一次（暂时只支持狩猎一次，按当天开放的芯核区追击）
-- ⚔️日常追踪豆佬
-- ⚔️日常追踪哈特（默认消耗完体力）
-- 🍂日常思念升级一次（会消耗一个绿瓶子，如果排序不当或网卡可能会升级四星/三星卡，介意勿勾选）
-- 💞主页面互动
-- 📅日常收尾
-
-### **⭐待开发功能（暂未施工，未来可期）**
-
-- 喵喵牌 娃娃机（周常）
-- 陪我一起----运动、睡觉、学习等活动
-- 周末时耗空过期体力
-- 活动时消耗体力道具以达到300体
+> [!TIP]
+>
+> 访问我们的 [文档](https://maalysk.top/) 以获得更优秀的文档阅读体验。
 
 ## 下载方式
 
@@ -65,7 +44,7 @@
 ## 使用说明
 
 - [快速开始](http://maalysk.top/zh_cn/manual/1.1) - 使用前必看，快速配置和启动
-- [功能介绍(建设中)](http://maalysk.top/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
+- [功能介绍](http://maalysk.top/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
 - [图文教程](http://maalysk.top/zh_cn/manual/1.3) - 专为小白编写的手把手教程
 - [常见问题(建设中)](http://maalysk.top/zh_cn/manual/2.1) - 遇到问题先看这里
 
@@ -77,9 +56,7 @@
 
 ## 加入我们
 
-- MaaLYSK 交流 QQ 群：暂无
-- MaaLYSK 开发 QQ 群：1065676561
-- 作者个人联系方式（QQ)：3044760489（如果有意向加入开发欢迎联系我！）
+- MaaLYSK 交流 QQ 群：1065676561（有意参与开发请联系群主）
 - MaaFramework 开发交流 QQ 群: 595990173
 
 ## 鸣谢
