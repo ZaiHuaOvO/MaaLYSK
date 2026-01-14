@@ -27,7 +27,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 500,
+        "post_delay": 1000,
         "next": ["周常_商城向下滑"]
     },
     "周常_商城向下滑": {
@@ -44,10 +44,9 @@
             }
         },
         "pre_delay": 1000,
-        "post_wait_freezes": 500,
         "post_delay": 2000,
         "repeat": 2,
-        "repeat_delay": 500,
+        "repeat_delay": 1000,
         "timeout": 5000,
         "focus": {
             "Node.PipelineNode.Failed": "[color:red]无每周礼包可领取[/color]"

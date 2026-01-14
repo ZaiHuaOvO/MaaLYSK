@@ -27,7 +27,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 500,
+        "post_delay": 1000,
         "next": ["日常_商城向下滑"]
     },
     "日常_商城向下滑": {
@@ -43,10 +43,10 @@
                 "duration": 800
             }
         },
-        "pre_delay": 500,
+        "pre_delay": 1000,
         "post_delay": 1000,
         "repeat": 3,
-        "repeat_delay": 500,
+        "repeat_delay": 1000,
         "timeout": 5000,
         "next": ["商城每日礼包"]
     },
