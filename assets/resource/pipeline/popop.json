@@ -1,215 +1,216 @@
 {
-    "退出领取点击popop": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [19, 936, 12, 13]
-            }
-        },
-        "max_hit": 5,
-        "next": []
-    },
-    "退出点击popop": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [19, 936, 12, 13]
-            }
-        },
-        "next": ["返回等待"]
-    },
-    "退出点击1popop": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [112, 1140, 3, 3]
-            }
-        },
-        "next": ["返回等待"]
-    },
-    "退出无脑点popop": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [112, 1140, 3, 3]
-            }
-        },
-        "next": []
-    },
-    "退出喵喵牌确定popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["确定"],
-                "roi": [448, 646, 63, 32]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "next": ["返回等待"]
-    },
-    "退出剧情回顾popop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": ["popop/剧情回顾popop.png"],
-                "roi": [648, 94, 44, 47]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "focus": "退出剧情回顾"
-    },
-    "退出获取奖励popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["获得奖励", "奖励", "获得"],
-                "roi": [273, 376, 190, 79]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [19, 936, 12, 13]
-            }
-        },
-        "next": []
-    },
-    "退出牵绊度提升popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["牵绊度提升", "牵绊度", "提升"],
-                "roi": [72, 329, 261, 249]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [19, 936, 12, 13]
-            }
-        },
-        "next": []
-    },
-    "退出娃娃机popop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": ["popop/娃娃机popop.png"],
-                "roi": [267, 280, 304, 251]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [19, 936, 12, 13]
-            }
-        },
-        "next": []
-    },
-    "退出点击空白继续popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "点击空白区域继续",
-                    "点击空白处关闭",
-                    "空白区域",
-                    "空白",
-                    "继续",
-                    "空白处",
-                    "关闭"
-                ],
-                "roi": [239, 1096, 247, 176]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {"target": [19, 936, 12, 13]}
-        },
-        "next": ["退出点击空白继续1popop"]
-    },
-    "退出点击空白继续1popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "点击空白区域继续",
-                    "点击空白处关闭",
-                    "空白区域",
-                    "空白",
-                    "继续",
-                    "空白处",
-                    "关闭"
-                ],
-                "roi": [239, 1096, 247, 176]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {"target": [112, 1140, 3, 3]}
-        },
-        "next": []
-    },
-    "体力耗尽不再继续": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["道具", "道", "具"],
-                "roi": [412, 407, 137, 48]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "focus": "体力已耗尽",
-        "next": ["退出领取点击popop"]
-    },
-    "网络连接失败popop": {
-        "recognition": {
-            "type": "OCR",
-            "param": {"expected": ["网络"], "roi": [138, 516, 50, 29]}
-        },
-        "action": {
-            "type": "Click",
-            "param": {"target": [456, 667, 42, 20]}
-        },
-        "focus": "网络连接失败,尝试点击关闭弹窗"
-    },
-    "断线重连popop": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": ["popop/再次重连.png"],
-                "roi": [379, 628, 193, 68]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "focus": "断线重连失败,尝试再次重连"
-    }
+	"退出领取点击popop": {
+		"recognition": {
+			"type": "DirectHit",
+			"param": {}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [19, 936, 12, 13]
+			}
+		},
+		"max_hit": 5,
+		"next": []
+	},
+	"退出点击popop": {
+		"recognition": {
+			"type": "DirectHit",
+			"param": {}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [19, 936, 12, 13]
+			}
+		},
+		"next": ["返回等待"]
+	},
+	"退出点击1popop": {
+		"recognition": {
+			"type": "DirectHit",
+			"param": {}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [112, 1140, 3, 3]
+			}
+		},
+		"next": ["返回等待"]
+	},
+	"退出无脑点popop": {
+		"recognition": {
+			"type": "DirectHit",
+			"param": {}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [112, 1140, 3, 3]
+			}
+		},
+		"next": []
+	},
+	"退出喵喵牌确定popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["确定"],
+				"roi": [448, 646, 63, 32]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"next": ["返回等待"]
+	},
+	"退出剧情回顾popop": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["popop/剧情回顾popop.png"],
+				"roi": [648, 94, 44, 47]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"focus": "退出剧情回顾"
+	},
+	"退出获取奖励popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["获得奖励", "奖励", "获得"],
+				"roi": [273, 376, 190, 79]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [19, 936, 12, 13]
+			}
+		},
+		"next": []
+	},
+	"退出牵绊度提升popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["牵绊度提升", "牵绊度", "提升"],
+				"roi": [72, 329, 261, 249]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [19, 936, 12, 13]
+			}
+		},
+		"next": []
+	},
+	"退出娃娃机popop": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["popop/娃娃机popop.png"],
+				"roi": [267, 280, 304, 251]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [19, 936, 12, 13]
+			}
+		},
+		"next": []
+	},
+	"退出点击空白继续popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": [
+					"点击空白区域继续",
+					"点击空白处关闭",
+					"空白区域",
+					"空白",
+					"继续",
+					"空白处",
+					"关闭"
+				],
+				"roi": [239, 1096, 247, 176]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {"target": [19, 936, 12, 13]}
+		},
+		"timeout": 3000,
+		"next": ["退出点击空白继续1popop"]
+	},
+	"退出点击空白继续1popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": [
+					"点击空白区域继续",
+					"点击空白处关闭",
+					"空白区域",
+					"空白",
+					"继续",
+					"空白处",
+					"关闭"
+				],
+				"roi": [239, 1096, 247, 176]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {"target": [112, 1140, 3, 3]}
+		},
+		"next": []
+	},
+	"体力耗尽不再继续": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["道具", "道", "具"],
+				"roi": [412, 407, 137, 48]
+			}
+		},
+		"action": {
+			"type": "DoNothing",
+			"param": {}
+		},
+		"focus": "体力已耗尽",
+		"next": ["退出领取点击popop"]
+	},
+	"网络连接失败popop": {
+		"recognition": {
+			"type": "OCR",
+			"param": {"expected": ["网络"], "roi": [138, 516, 50, 29]}
+		},
+		"action": {
+			"type": "Click",
+			"param": {"target": [456, 667, 42, 20]}
+		},
+		"focus": "网络连接失败,尝试点击关闭弹窗"
+	},
+	"断线重连popop": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["popop/再次重连.png"],
+				"roi": [379, 628, 193, 68]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"focus": "断线重连失败,尝试再次重连"
+	}
 }
