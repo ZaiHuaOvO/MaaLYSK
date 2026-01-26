@@ -21,7 +21,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": ["phone/手机信息.png"],
-				"roi": [631, 962, 73, 77]
+				"roi": [631, 962, 73, 77],
+				"green_mask": true
 			}
 		},
 		"action": {
