@@ -1,31 +1,88 @@
 {
-    "自动过剧情": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["自动", "自", "动"],
-                "roi": [473, 1203, 33, 18]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "post_delay": 2000,
-        "next": "自动过剧情点点"
-    },
-    "自动过剧情点点": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ["自动", "自", "动"],
-                "roi": [473, 1203, 33, 18]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "post_delay": 2000
-    }
+	"自动过剧情": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["自动", "自", "动"],
+				"roi": [473, 1203, 33, 18]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"pre_delay": 2000,
+		"post_delay": 5000,
+		"next": [
+			"点成2倍速",
+			"[JumpBack]选剧情选项",
+			"[JumpBack]自动过剧情点点"
+		]
+	},
+	"点成2倍速": {
+		"recognition": {
+			"type": "DirectHit"
+		},
+		"action": {
+			"type": "Click",
+			"param": {"target": [571, 1198, 17, 23]}
+		},
+		"repeat": 3,
+		"repeat_delay": 1000,
+		"timeout": 10000,
+		"next": ["[JumpBack]选剧情选项", "[JumpBack]自动过剧情点点"]
+	},
+	"自动过剧情点点": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["自动", "自", "动"],
+				"roi": [473, 1203, 33, 18]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [631, 917, 25, 29]
+			}
+		},
+		"repeat": 5,
+		"repeat_delay": 200
+	},
+	"选剧情选项": {
+		"recognition": {
+			"type": "ColorMatch",
+			"param": {
+				"lower": [94, 89, 117],
+				"upper": [114, 109, 137],
+				"roi": [242, 610, 274, 68],
+				"count": 1000
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [348, 561, 42, 18]
+			}
+		},
+		"next": ["选剧情点点1"]
+	},
+	"选剧情点点1": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [342, 646, 47, 10]
+			}
+		},
+		"next": ["选剧情点点2"]
+	},
+	"选剧情点点2": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [322, 475, 73, 12]
+			}
+		},
+		"next": []
+	}
 }
