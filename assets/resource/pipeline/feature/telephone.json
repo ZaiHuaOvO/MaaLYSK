@@ -29,6 +29,7 @@
 			"type": "Click",
 			"param": {"target": [569, 1039, 10, 13]}
 		},
+		"post_delay": 1500,
 		"next": []
 	},
 	"确认在电话页面": {

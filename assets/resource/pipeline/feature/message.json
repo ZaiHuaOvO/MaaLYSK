@@ -29,6 +29,7 @@
 			"type": "Click",
 			"param": {"target": [653, 989, 24, 18]}
 		},
+		"post_delay": 1500,
 		"next": []
 	},
 	"确认在信息页面": {

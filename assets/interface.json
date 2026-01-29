@@ -174,17 +174,23 @@
 			"description": "自动读取短信，默认选择第一个选项。介意请不要使用此功能\n\n勾选为读短信，需要填短信页面你设置的男主昵称"
 		},
 		{
-			"name": "📲自动接电话",
+			"name": "📞自动接电话",
 			"entry": "进入自动接电话",
 			"default_check": false,
 			"option": ["电话类型选择"],
-			"description": "自动读取短信，默认选择第一个选项。介意请不要使用此功能\n\n勾选为读短信，需要填短信页面你设置的男主昵称"
+			"description": "自动接语音和视频电话"
+		},
+		{
+			"name": "🌐自动回复朋友圈",
+			"entry": "进入自动回复朋友圈",
+			"default_check": false,
+			"description": "自动回复朋友圈,选择未回复的进行回复,默认第一个选项,介意请勿使用"
 		},
 		{
 			"name": "🌟限时活动每日领取",
 			"entry": "进入限时活动",
 			"default_check": false,
-			"description": "限时活动领取每日任务奖励，需要提前进入一次页面以防止有动画\n\n[color:red]周年庆限定版[/color]"
+			"description": "限时活动领取每日任务奖励，需要提前进入一次页面以防止有动画\n\n[color:red]目前关闭中，请不要勾选[/color]"
 		},
 		{
 			"name": " 🃏喵喵牌抽卡",
