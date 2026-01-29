@@ -11,6 +11,7 @@
 			"type": "Click",
 			"param": {"target": [482, 1206, 16, 11]}
 		},
+		"post_delay": 2000,
 		"next": [
 			"[JumpBack]我想接着抓",
 			"抓娃娃选先后手",
@@ -27,7 +28,7 @@
 				"lower": [94, 89, 117],
 				"upper": [114, 109, 137],
 				"roi": [242, 610, 274, 68],
-				"count": 1000
+				"count": 900
 			}
 		},
 		"action": {
@@ -42,6 +43,9 @@
 			"param": {
 				"expected": [
 					"沈星回",
+					"星回",
+					"沈",
+					"黎",
 					"黎深",
 					"祁煜",
 					"夏以昼",
@@ -59,12 +63,13 @@
 		},
 		"repeat": 2,
 		"repeat_delay": 500,
+		"post_delay": 2000,
 		"next": [
 			"娃娃机点击空白继续",
 			"男主抓娃娃",
-			"[JumpBack]抓娃娃蓝色按钮",
+			"[JumpBack]我想接着抓",
 			"[JumpBack]过剧情",
-			"[JumpBack]我想接着抓"
+			"[JumpBack]抓娃娃蓝色按钮"
 		]
 	},
 	"让我抓娃娃_下": {
@@ -81,6 +86,7 @@
 		},
 		"repeat": 2,
 		"repeat_delay": 500,
+		"post_delay": 2000,
 		"next": [
 			"娃娃机点击空白继续",
 			"男主抓娃娃",
@@ -103,6 +109,7 @@
 		},
 		"repeat": 2,
 		"repeat_delay": 500,
+		"post_delay": 2000,
 		"next": [
 			"娃娃机点击空白继续",
 			"男主抓娃娃",
