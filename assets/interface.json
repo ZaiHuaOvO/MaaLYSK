@@ -143,7 +143,7 @@
 			"description": "完成周常拍大头贴的任务"
 		},
 		{
-			"name": "📷周常拍写真",
+			"name": "📸周常拍写真",
 			"entry": "进入写真拍照",
 			"default_check": false,
 			"option": ["选择写真拍照男主"],
