@@ -180,7 +180,7 @@
 		"focus": {
 			"Node.Action.Succeeded": "开始读夏以昼短信"
 		},
-		"timeout": 35000,
+		"timeout": 40000,
 		"next": [
 			"[JumpBack]选择第一条短信",
 			"[JumpBack]发送短信",
