@@ -28,6 +28,7 @@
 
 ## 免责条款
 
+- 请不要去任何平台的恋与深空官方账号下面宣传MaaLYSK！
 - 本资源按“现状”提供，不附带任何形式的明示或暗示担保。使用者需自行承担所有风险。
 - 作者不对因使用本资源而导致的任何直接、间接或结果性损失承担责任。
 - 本资源为独立组件，其MIT许可证不传染，也不受与之集成的其他软件许可证的影响。
@@ -46,11 +47,15 @@
 - [快速开始](http://maalysk.top/zh_cn/manual/1.1) - 使用前必看，快速配置和启动
 - [功能介绍](http://maalysk.top/zh_cn/manual/1.2) - 详细的功能说明和使用技巧
 - [图文教程](http://maalysk.top/zh_cn/manual/1.3) - 专为小白编写的手把手教程
-- [常见问题(建设中)](http://maalysk.top/zh_cn/manual/2.1) - 遇到问题先看这里
+- [更新说明](http://maalysk.top/zh_cn/manual/1.4) - MaaLYSK更新方法的教程
+- [Mirror酱使用说明](http://maalysk.top/zh_cn/manual/2.1) - 关于第三方平台付费更新的说明
+- [常见问题(建设中)](http://maalysk.top/zh_cn/manual/2.2) - 遇到问题先看这里
 
 ## 开发相关
 
 - [零基础开发指南](http://maalysk.top/zh_cn/develop/0.0) - 环境配置与开发流程
+- [项目结构](http://maalysk.top/zh_cn/develop/0.1) - 项目结构说明
+- [开发工具介绍](http://maalysk.top/zh_cn/develop/0.2) - 关于MaaLYSK开发调试的小工具说明
 - [开发规范(建设中)](http://maalysk.top/zh_cn/develop/1.1) - 代码规范说明
 - [文档编写规范](http://maalysk.top/zh_cn/develop/2.1) - 关于Markdown文档编写的规范和说明
 
@@ -75,4 +80,4 @@
 
 感谢以下开发者对本项目作出的贡献：
 
-[![Contributors](https://contrib.rocks/image?repo=Witty36/MaaLYSK&max=1000)](https://github.com/Witty36/MaaLYSK/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Witty36/MaaLYSK&max=100)](https://github.com/Witty36/MaaLYSK/graphs/contributors)
