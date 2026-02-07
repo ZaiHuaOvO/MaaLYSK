@@ -1,9 +1,10 @@
+ <!-- markdownlint-disable MD033 MD041-->
 <div align="center">
   <img alt="LOGO" src="https://api.flowersink.com/img/MaaLYSK_logo.png" width="256" height="256" />
 
 # MaaLYSK
 
-  基于全新架构的**恋与深空**日常/肝活小助手。图像技术 + 模拟控制，解放双手！
+ 基于全新架构的**恋与深空**日常/肝活小助手。图像技术 + 模拟控制，解放双手！
 
   由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
 
