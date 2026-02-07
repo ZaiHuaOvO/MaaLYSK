@@ -158,8 +158,17 @@
 				"target": [662, 1038, 7, 6]
 			}
 		},
-		"post_delay": 4000,
-		"next": []
+		"next": ["确认在牵绊页面"]
+	},
+	"确认在牵绊页面": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["task/weekly/分享按钮.png"],
+				"roi": [638, 350, 68, 69],
+				"green_mask": true
+			}
+		}
 	},
 	"点击零点追踪": {
 		"recognition": {
