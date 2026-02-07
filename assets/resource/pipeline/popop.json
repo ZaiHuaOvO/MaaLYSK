@@ -165,6 +165,23 @@
 		},
 		"next": []
 	},
+	"退出分享页面popop": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["popop/分享页面popop.png"],
+				"roi": [577, 70, 82, 73],
+				"green_mask": true
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [614, 98, 11, 12]
+			}
+		},
+		"next": []
+	},
 	"体力耗尽不再继续": {
 		"recognition": {
 			"type": "OCR",
