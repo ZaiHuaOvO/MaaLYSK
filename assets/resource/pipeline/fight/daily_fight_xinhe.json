@@ -62,7 +62,7 @@
 		"inverse": true,
 		"post_delay": 2000,
 		"post_wait_freezes": 500,
-		"focus": "红绿芯核追击一次",
+		"focus": "红绿芯核追击",
 		"next": ["芯核是否解锁", "[JumpBack]芯核向左滑动"]
 	},
 	"日常_选择黄紫芯核": {
@@ -83,7 +83,7 @@
 		"inverse": true,
 		"post_delay": 2000,
 		"post_wait_freezes": 500,
-		"focus": "黄紫芯核追击一次",
+		"focus": "黄紫芯核追击",
 		"next": ["芯核是否解锁", "[JumpBack]芯核向左滑动"]
 	},
 	"日常_选择粉蓝芯核": {
@@ -104,7 +104,7 @@
 		"inverse": true,
 		"post_delay": 2000,
 		"post_wait_freezes": 500,
-		"focus": "粉蓝芯核追击一次",
+		"focus": "粉蓝芯核追击",
 		"next": ["芯核是否解锁", "[JumpBack]芯核向左滑动"]
 	},
 	"芯核是否解锁": {
