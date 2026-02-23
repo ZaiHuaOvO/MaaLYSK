@@ -27,7 +27,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"next": ["点击鎏金卡"]
+		"next": ["点击鎏金卡", "月卡领取"]
 	},
 	"点击鎏金卡": {
 		"recognition": {
