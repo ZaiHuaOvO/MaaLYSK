@@ -56,9 +56,58 @@
 			"param": {"target": [529, 1120, 42, 23]}
 		},
 		"post_delay": 500,
-		"focus": "日程任务领取成功",
-		"timeout": 500,
+		"focus": {
+			"Node.Action.Succeeded": "日程任务领取成功"
+		},
+		"timeout": 5000,
 		"repeat": 10,
+		"next": [
+			"日程活跃度100",
+			"日程活跃度未满100",
+			"[JumpBack]退出获得奖励popop",
+			"[JumpBack]退出点击（上限）popop"
+		]
+	},
+	"日程活跃度100": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["task/活跃度已满.png"],
+				"roi": [565, 249, 76, 79]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [529, 1120, 42, 23]
+			}
+		},
+		"max_hit": 1,
+		"post_delay": 500,
+		"focus": {
+			"Node.Recognition.Succeeded": "活跃值达100，奖励全部领取"
+		},
+		"next": []
+	},
+	"日程活跃度未满100": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["task/活跃度未满.png"],
+				"roi": [565, 249, 76, 79]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [529, 1120, 42, 23]
+			}
+		},
+		"max_hit": 1,
+		"post_delay": 500,
+		"focus": {
+			"Node.Recognition.Succeeded": "[color:red]活跃值未满100，请手动完成/color]"
+		},
 		"next": []
 	},
 	"日常签到准备": {
