@@ -14,10 +14,18 @@
 			"type": "Click",
 			"param": {}
 		},
-		"post_delay": 2000,
+		"next": ["日程页面确认"]
+	},
+	"日程页面确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [532, 25, 182, 109],
+				"expected": ["任务"]
+			}
+		},
 		"next": []
 	},
-
 	"点击活动": {
 		"recognition": {
 			"type": "TemplateMatch",
@@ -31,7 +39,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"post_delay": 2000,
+		"post_delay": 3500,
 		"next": []
 	},
 	"点击许愿": {
@@ -48,7 +56,16 @@
 				"target": [654, 841, 22, 14]
 			}
 		},
-		"post_delay": 5000,
+		"next": ["许愿页面确认"]
+	},
+	"许愿页面确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["星间探测", "星间", "探测"],
+				"roi": [626, 107, 71, 66]
+			}
+		},
 		"next": []
 	},
 	"点击商城": {
@@ -73,11 +90,6 @@
 				"roi": [124, 197, 59, 41]
 			}
 		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"post_delay": 1000,
 		"next": []
 	},
 	"点击作战": {
@@ -94,7 +106,6 @@
 				"target": [395, 1178, 17, 15]
 			}
 		},
-		"post_delay": 2000,
 		"next": ["作战页面确认"]
 	},
 	"作战页面确认": {
@@ -105,16 +116,13 @@
 				"roi": [144, 94, 186, 134]
 			}
 		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		}
+		"next": []
 	},
 	"点击约会": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
-				"roi": [271, 1198, 56, 34],
+				"roi": [257, 1172, 94, 98],
 				"expected": ["约会"]
 			}
 		},
@@ -124,7 +132,16 @@
 				"target": [302, 1190, 13, 16]
 			}
 		},
-		"post_delay": 2000,
+		"next": ["约会页面确认"]
+	},
+	"约会页面确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [95, 100, 231, 184],
+				"expected": ["约会"]
+			}
+		},
 		"next": []
 	},
 	"点击思念": {
@@ -141,7 +158,16 @@
 				"target": [504, 1186, 10, 8]
 			}
 		},
-		"post_delay": 4000,
+		"next": ["思念页面确认"]
+	},
+	"思念页面确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [532, 25, 182, 109],
+				"expected": ["思念"]
+			}
+		},
 		"next": []
 	},
 	"点击牵绊": {
@@ -168,7 +194,8 @@
 				"roi": [638, 350, 68, 69],
 				"green_mask": true
 			}
-		}
+		},
+		"next": []
 	},
 	"点击零点追踪": {
 		"recognition": {
@@ -192,10 +219,6 @@
 				"roi": [394, 121, 237, 318]
 			}
 		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
 		"next": []
 	},
 	"点击手机": {
@@ -211,8 +234,7 @@
 			"type": "Click",
 			"param": {"target": [53, 1060, 8, 17]}
 		},
-		"post_delay": 2000,
-		"next": []
+		"next": ["手机页面确认"]
 	},
 	"点击手机（绿码）": {
 		"pre_delay": 1000,
@@ -230,7 +252,16 @@
 				"target": [53, 1060, 8, 17]
 			}
 		},
-		"post_delay": 2000,
+		"next": ["手机页面确认"]
+	},
+	"手机页面确认": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["phone/手机页面1.png", "phone/手机页面2.png"],
+				"roi": [531, 1056, 187, 219]
+			}
+		},
 		"next": []
 	},
 	"进入手机电话": {
@@ -246,7 +277,6 @@
 			"type": "Click",
 			"param": {"target": [569, 1039, 10, 13]}
 		},
-		"post_delay": 1500,
 		"next": ["电话页面确认"]
 	},
 	"电话页面确认": {
@@ -256,7 +286,8 @@
 				"roi": [144, 110, 186, 81],
 				"expected": ["语音"]
 			}
-		}
+		},
+		"next": []
 	},
 	"进入手机朋友圈": {
 		"recognition": {
@@ -269,9 +300,10 @@
 		},
 		"action": {
 			"type": "Click",
-			"param": {"target": [500, 1111, 5, 5]}
+			"param": {
+				"target": [500, 1111, 5, 5]
+			}
 		},
-		"post_delay": 1500,
 		"next": ["朋友圈页面确认"]
 	},
 	"朋友圈页面确认": {
@@ -304,7 +336,8 @@
 					}
 				]
 			}
-		}
+		},
+		"next": []
 	},
 	"进入手机信息": {
 		"recognition": {
@@ -317,9 +350,10 @@
 		},
 		"action": {
 			"type": "Click",
-			"param": {"target": [653, 989, 24, 18]}
+			"param": {
+				"target": [653, 989, 24, 18]
+			}
 		},
-		"post_delay": 1500,
 		"next": ["信息页面确认"]
 	},
 	"信息页面确认": {
@@ -329,6 +363,7 @@
 				"roi": [546, 36, 129, 87],
 				"expected": ["信息"]
 			}
-		}
+		},
+		"next": []
 	}
 }

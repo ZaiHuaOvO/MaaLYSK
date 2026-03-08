@@ -51,7 +51,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"enabled": true,
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "进入沈星回抓娃娃"
@@ -70,7 +70,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"enabled": true,
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "进入黎深抓娃娃"
@@ -89,7 +89,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"enabled": true,
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "进入祁煜抓娃娃"
@@ -108,7 +108,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"enabled": true,
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "进入秦彻抓娃娃"
@@ -127,7 +127,7 @@
 			"type": "Click",
 			"param": {}
 		},
-		"enabled": true,
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "进入夏以昼抓娃娃"
