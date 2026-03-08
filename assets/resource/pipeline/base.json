@@ -39,7 +39,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [638, 835, 57, 50],
-				"expected": ["许愿", "愿", "许"]
+				"expected": ["许愿"]
 			}
 		},
 		"action": {
@@ -85,7 +85,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [376, 1187, 53, 39],
-				"expected": ["作战", "作", "战"]
+				"expected": ["作战"]
 			}
 		},
 		"action": {
@@ -101,7 +101,7 @@
 		"recognition": {
 			"type": "OCR",
 			"param": {
-				"expected": ["作战", "作", "战"],
+				"expected": ["作战"],
 				"roi": [144, 94, 186, 134]
 			}
 		},
@@ -115,7 +115,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [271, 1198, 56, 34],
-				"expected": ["约会", "约", "会"]
+				"expected": ["约会"]
 			}
 		},
 		"action": {
@@ -132,7 +132,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [472, 1198, 56, 27],
-				"expected": ["思念", "思", "念"]
+				"expected": ["思念"]
 			}
 		},
 		"action": {
@@ -149,7 +149,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [631, 1026, 69, 60],
-				"expected": ["牵绊", "牵", "绊"]
+				"expected": ["牵绊"]
 			}
 		},
 		"action": {
@@ -254,7 +254,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [144, 110, 186, 81],
-				"expected": ["语音", "语", "音"]
+				"expected": ["语音"]
 			}
 		}
 	},
@@ -327,7 +327,7 @@
 			"type": "OCR",
 			"param": {
 				"roi": [546, 36, 129, 87],
-				"expected": ["信息", "信", "息"]
+				"expected": ["信息"]
 			}
 		}
 	}
