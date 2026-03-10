@@ -263,6 +263,11 @@
 			"option": ["输入当前兑换码"]
 		},
 		{
+			"name": "✉️邮箱领取",
+			"entry": "进入邮箱领取",
+			"default_check": false
+		},
+		{
 			"name": "🌟限时活动每日领取",
 			"entry": "进入限时活动",
 			"default_check": false,
