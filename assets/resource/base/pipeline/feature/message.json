@@ -57,6 +57,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始读祁煜短信"
@@ -83,6 +84,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始读沈星回短信"
@@ -109,6 +111,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始读黎深短信"
@@ -135,6 +138,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始读秦彻短信"
@@ -161,6 +165,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始读夏以昼短信"

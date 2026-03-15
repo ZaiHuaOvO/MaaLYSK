@@ -82,6 +82,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始打祁煜电话"
@@ -107,6 +108,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始打沈星回电话"
@@ -132,6 +134,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始打黎深电话"
@@ -157,6 +160,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始打秦彻电话"
@@ -182,6 +186,7 @@
 			"type": "Click",
 			"param": {}
 		},
+		"enabled": false,
 		"max_hit": 1,
 		"focus": {
 			"Node.Action.Succeeded": "开始打夏以昼电话"
