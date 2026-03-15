@@ -131,13 +131,15 @@
 			"type": "DoNothing",
 			"param": {}
 		},
-		"focus": "男主开始抓娃娃",
+		"focus": {
+			"Node.Recognition.Succeeded": "他开始抓三爪娃娃"
+		},
 		"next": [
 			"娃娃机点击空白继续",
-			"[JumpBack]选取娃娃_三爪",
 			"[JumpBack]娃娃机对话_上_让他抓",
 			"[JumpBack]娃娃机对话_下_让他抓",
 			"[JumpBack]过剧情",
+			"[JumpBack]选取娃娃_三爪",
 			"[JumpBack]抓娃娃页面等待_三爪"
 		]
 	},
@@ -147,7 +149,7 @@
 			"param": {
 				"lower": [94, 89, 117],
 				"upper": [114, 109, 137],
-				"roi": [119, 597, 465, 100],
+				"roi": [113, 360, 236, 350],
 				"count": 750
 			}
 		},
@@ -187,7 +189,7 @@
 			"param": {}
 		},
 		"focus": {
-			"Node.Recognition.Succeeded": "选择未集齐娃娃"
+			"Node.Recognition.Succeeded": "选择未获得娃娃"
 		},
 		"next": []
 	},
@@ -284,7 +286,7 @@
 			"Node.Recognition.Succeeded": "他拒绝了"
 		},
 		"repeat": 2,
-		"post_delay": 5000,
+		"post_delay": 10000,
 		"next": []
 	},
 	"娃娃机换人_到他了": {
@@ -305,7 +307,7 @@
 			"Node.Recognition.Succeeded": "成功让他开始抓娃娃"
 		},
 		"repeat": 2,
-		"post_delay": 5000,
+		"post_delay": 10000,
 		"timeout": 40000,
 		"next": ["他开始抓娃娃"]
 	}
