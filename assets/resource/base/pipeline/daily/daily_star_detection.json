@@ -47,7 +47,9 @@
 			"type": "DoNothing",
 			"param": {}
 		},
-		"focus": {"Node.Recognition.Succeeded": "探测未完成"},
+		"focus": {
+			"Node.Recognition.Succeeded": "探测未完成"
+		},
 		"next": ["结束探测"]
 	},
 	"结束探测": {
@@ -94,6 +96,9 @@
 		"action": {
 			"type": "Click",
 			"param": {}
+		},
+		"focus": {
+			"Node.Action.Succeeded": "收取上次探测信号"
 		},
 		"pre_delay": 500,
 		"post_delay": 2000,
