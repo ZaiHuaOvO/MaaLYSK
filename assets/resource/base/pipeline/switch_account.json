@@ -75,6 +75,7 @@
 			"用户中心",
 			"[JumpBack]sub_进入游戏",
 			"[JumpBack]sub_启动深空官服",
+			"[JumpBack]返回上一级页面",
 			"[JumpBack]启动再等等"
 		],
 		"focus": "启动游戏并使用指定账号登录"
