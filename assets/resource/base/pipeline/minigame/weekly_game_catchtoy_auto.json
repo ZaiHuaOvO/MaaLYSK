@@ -20,39 +20,14 @@
 			"尝试抢男主娃娃",
 			"我开始抓娃娃",
 			"[JumpBack]过剧情"
-		]
-		//	"on_error": ["null"]
-	},
-	"抓娃娃选先后手1": {
-		"recognition": {
-			"type": "ColorMatch",
-			"param": {
-				"lower": [94, 89, 117],
-				"upper": [114, 109, 137],
-				"roi": [242, 610, 274, 68],
-				"count": 750
-			}
-		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"next": ["让我抓娃娃_上", "让我抓娃娃_下"]
+		],
+		"on_error": ["null"]
 	},
 	"抓娃娃选先后手": {
 		"recognition": {
 			"type": "And",
 			"param": {
 				"all_of": [
-					{
-						"recognition": {
-							"type": "OCR",
-							"param": {
-								"expected": "[\u4e00-\u9fa5]",
-								"roi": [242, 610, 274, 68]
-							}
-						}
-					},
 					{
 						"recognition": {
 							"type": "ColorMatch",
@@ -63,8 +38,18 @@
 								"count": 750
 							}
 						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": "[\u4e00-\u9fa5]",
+								"roi": [242, 610, 274, 68]
+							}
+						}
 					}
-				]
+				],
+				"box_index": 0
 			}
 		},
 		"action": {
@@ -214,7 +199,8 @@
 		"post_delay": 10000,
 		"focus": {
 			"Node.Recognition.Succeeded": "他拒绝了"
-		}
+		},
+		"next": []
 	},
 	"娃娃机确认换人": {
 		"recognition": {
@@ -252,7 +238,8 @@
 			"type": "DoNothing",
 			"param": {}
 		},
-		"next": ["点击娃娃机复位按钮"]
+		"next": ["点击娃娃机复位按钮"],
+		"on_error": ["null"]
 	},
 	"点击娃娃机复位按钮": {
 		"recognition": {
@@ -338,8 +325,10 @@
 			"[JumpBack]退出娃娃机结算popop",
 			"[JumpBack]退出点击空白继续popop",
 			"[JumpBack]退出新娃娃获得popop",
+			"[JumpBack]退出牵绊度提升popop",
 			"[JumpBack]退出点击1popop"
-		]
+		],
+		"on_error": ["null"]
 	},
 	"过剧情": {
 		"recognition": {
@@ -357,21 +346,6 @@
 		"rate_limit": 500,
 		"next": ["自动过剧情点点"],
 		"on_error": ["null"]
-	},
-	"娃娃位置确认": {
-		"recognition": {
-			"type": "TemplateMatch",
-			"param": {
-				"template": ["minigame/catchtoy/娃娃位置确认.png"],
-				"roi": [268, 867, 195, 85]
-			}
-		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"post_delay": 4000,
-		"next": ["抓娃娃绿色按钮"]
 	},
 	"抓娃娃绿色按钮": {
 		"recognition": {
@@ -444,21 +418,5 @@
 		"post_delay": 15000,
 		"next": [],
 		"on_error": ["null"]
-	},
-	"男主抓娃娃": {
-		"recognition": {
-			"type": "TemplateMatch",
-			"param": {
-				"template": ["minigame/catchtoy/男主抓娃娃.png"],
-				"roi": [79, 426, 162, 190],
-				"threshold": 0.6
-			}
-		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"focus": "男主开始抓娃娃,直接退出",
-		"next": ["娃娃机返回"]
 	}
 }

@@ -56,7 +56,8 @@
 		"focus": {
 			"Node.Action.Succeeded": "进入沈星回抓娃娃"
 		},
-		"next": ["进入娃娃机页面"]
+		"next": ["进入娃娃机页面"],
+		"on_error": ["null"]
 	},
 	"娃娃机_选择黎深": {
 		"recognition": {
@@ -75,7 +76,8 @@
 		"focus": {
 			"Node.Action.Succeeded": "进入黎深抓娃娃"
 		},
-		"next": ["进入娃娃机页面"]
+		"next": ["进入娃娃机页面"],
+		"on_error": ["null"]
 	},
 	"娃娃机_选择祁煜": {
 		"recognition": {
@@ -94,7 +96,8 @@
 		"focus": {
 			"Node.Action.Succeeded": "进入祁煜抓娃娃"
 		},
-		"next": ["进入娃娃机页面"]
+		"next": ["进入娃娃机页面"],
+		"on_error": ["null"]
 	},
 	"娃娃机_选择秦彻": {
 		"recognition": {
@@ -113,7 +116,8 @@
 		"focus": {
 			"Node.Action.Succeeded": "进入秦彻抓娃娃"
 		},
-		"next": ["进入娃娃机页面"]
+		"next": ["进入娃娃机页面"],
+		"on_error": ["null"]
 	},
 	"娃娃机_选择夏以昼": {
 		"recognition": {
@@ -132,7 +136,8 @@
 		"focus": {
 			"Node.Action.Succeeded": "进入夏以昼抓娃娃"
 		},
-		"next": ["进入娃娃机页面"]
+		"next": ["进入娃娃机页面"],
+		"on_error": ["null"]
 	},
 	"进入娃娃机页面": {
 		"recognition": {
@@ -171,7 +176,8 @@
 		"focus": {
 			"Node.Recognition.Succeeded": "选择平衡捕手"
 		},
-		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"]
+		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"],
+		"on_error": ["null"]
 	},
 	"选择平衡捕手": {
 		"recognition": {
@@ -207,7 +213,8 @@
 		"focus": {
 			"Node.Recognition.Succeeded": "选择心跳回旋"
 		},
-		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"]
+		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"],
+		"on_error": ["null"]
 	},
 	"选择心跳回旋": {
 		"recognition": {
@@ -255,7 +262,8 @@
 			"type": "Click",
 			"param": {}
 		},
-		"next": ["娃娃机游戏中页面"]
+		"next": ["娃娃机游戏中页面"],
+		"on_error": ["娃娃机出发"]
 	},
 	"娃娃机游戏中页面": {
 		"recognition": {
@@ -305,7 +313,8 @@
 			"[JumpBack]退出牵绊度提升popop",
 			"[JumpBack]退出获得奖励popop",
 			"[JumpBack]退出各类弹窗"
-		]
+		],
+		"on_error": ["null"]
 	},
 	"是否娃娃机页面": {
 		"recognition": {
