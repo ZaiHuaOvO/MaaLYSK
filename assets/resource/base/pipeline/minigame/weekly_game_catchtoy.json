@@ -168,6 +168,9 @@
 			"type": "DoNothing",
 			"param": {}
 		},
+		"focus": {
+			"Node.Recognition.Succeeded": "选择平衡捕手"
+		},
 		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"]
 	},
 	"选择平衡捕手": {
@@ -187,13 +190,13 @@
 		"repeat": 2,
 		"next": []
 	},
-	"确认选好三爪标准": {
+	"确认选好心跳回旋": {
 		"recognition": {
 			"type": "ColorMatch",
 			"param": {
 				"upper": [238, 209, 201],
 				"lower": [201, 127, 112],
-				"roi": [82, 880, 270, 94],
+				"roi": [99, 969, 271, 95],
 				"count": 400
 			}
 		},
@@ -201,20 +204,23 @@
 			"type": "DoNothing",
 			"param": {}
 		},
+		"focus": {
+			"Node.Recognition.Succeeded": "选择心跳回旋"
+		},
 		"next": ["娃娃机是否上限", "[JumpBack]娃娃机出发"]
 	},
-	"选择三爪标准": {
+	"选择心跳回旋": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/三爪标准.png"],
-				"roi": [82, 880, 270, 94]
+				"template": ["minigame/catchtoy/心跳回旋.png"],
+				"roi": [98, 968, 271, 95]
 			}
 		},
 		"action": {
 			"type": "Click",
 			"param": {
-				"target_offset": [71, 13, -132, -23]
+				"target_offset": [20, 5, -40, -10]
 			}
 		},
 		"repeat": 2,
@@ -279,7 +285,8 @@
 				"target": [26, 63, 8, 9]
 			}
 		},
-		"next": ["娃娃机确定退出", "娃娃机点击空白继续"]
+		"next": ["娃娃机确定退出", "娃娃机结算退出继续"],
+		"on_error": ["null"]
 	},
 	"娃娃机确定退出": {
 		"recognition": {
