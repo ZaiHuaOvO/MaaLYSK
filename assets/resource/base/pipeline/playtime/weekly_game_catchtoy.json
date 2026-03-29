@@ -19,7 +19,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/快乐出游.png"],
+				"template": ["playtime/快乐出游.png"],
 				"roi": [152, 539, 122, 122]
 			}
 		},
@@ -143,7 +143,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/娃娃机进入.png"],
+				"template": ["playtime/catchtoy/娃娃机进入.png"],
 				"roi": [396, 358, 156, 98]
 			}
 		},
@@ -184,7 +184,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/平衡捕手.png"],
+				"template": ["playtime/catchtoy/平衡捕手.png"],
 				"roi": [350, 877, 269, 93]
 			}
 		},
@@ -221,7 +221,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/心跳回旋.png"],
+				"template": ["playtime/catchtoy/心跳回旋.png"],
 				"roi": [98, 968, 271, 95]
 			}
 		},
@@ -284,7 +284,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/娃娃机返回.png"],
+				"template": ["playtime/catchtoy/娃娃机返回.png"],
 				"roi": [0, 0, 88, 132]
 			}
 		},
@@ -323,7 +323,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/娃娃机页面确认.png"],
+				"template": ["playtime/catchtoy/娃娃机页面确认.png"],
 				"roi": [211, 554, 257, 218]
 			}
 		},
@@ -336,7 +336,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/切换人物.png"],
+				"template": ["playtime/切换人物.png"],
 				"roi": [673, 146, 40, 41]
 			}
 		},

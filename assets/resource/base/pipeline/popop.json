@@ -107,7 +107,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/娃娃机结算页面.png"],
+				"template": ["playtime/catchtoy/娃娃机结算页面.png"],
 				"roi": [36, 177, 677, 477]
 			}
 		},
@@ -123,7 +123,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catcard/喵喵牌结算页面.png"],
+				"template": ["playtime/catcard/喵喵牌结算页面.png"],
 				"roi": [36, 177, 677, 477]
 			}
 		},

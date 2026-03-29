@@ -126,7 +126,7 @@
 							"type": "TemplateMatch",
 							"param": {
 								"template": [
-									"minigame/catchtoy/男主抓娃娃.png"
+									"playtime/catchtoy/男主抓娃娃.png"
 								],
 								"roi": [79, 426, 162, 190],
 								"threshold": 0.6
@@ -276,7 +276,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/男主抓娃娃.png"],
+				"template": ["playtime/catchtoy/男主抓娃娃.png"],
 				"roi": [79, 426, 162, 190],
 				"threshold": 0.6
 			}
@@ -292,7 +292,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/我在抓三爪.png"],
+				"template": ["playtime/catchtoy/我在抓三爪.png"],
 				"roi": [122, 1027, 210, 253],
 				"threshold": 0.6
 			}
@@ -317,7 +317,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/换人切换.png"],
+				"template": ["playtime/catchtoy/换人切换.png"],
 				"roi": [10, 138, 88, 99]
 			}
 		},

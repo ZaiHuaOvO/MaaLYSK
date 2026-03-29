@@ -121,8 +121,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": [
-					"minigame/catchtoy/抓娃娃蓝色按钮.png",
-					"minigame/catchtoy/抓娃娃蓝色按钮1.png"
+					"playtime/catchtoy/抓娃娃蓝色按钮.png",
+					"playtime/catchtoy/抓娃娃蓝色按钮1.png"
 				],
 				"roi": [253, 1095, 149, 139],
 				"threshold": 0.6,
@@ -151,7 +151,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/男主抓娃娃.png"],
+				"template": ["playtime/catchtoy/男主抓娃娃.png"],
 				"roi": [79, 426, 162, 190],
 				"threshold": 0.6
 			}
@@ -176,7 +176,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/换人切换.png"],
+				"template": ["playtime/catchtoy/换人切换.png"],
 				"roi": [10, 138, 88, 99]
 			}
 		},
@@ -230,8 +230,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": [
-					"minigame/catchtoy/抓娃娃蓝色按钮.png",
-					"minigame/catchtoy/抓娃娃蓝色按钮1.png"
+					"playtime/catchtoy/抓娃娃蓝色按钮.png",
+					"playtime/catchtoy/抓娃娃蓝色按钮1.png"
 				],
 				"roi": [253, 1095, 149, 139],
 				"threshold": 0.6,
@@ -249,7 +249,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["minigame/catchtoy/娃娃机复位按钮.png"],
+				"template": ["playtime/catchtoy/娃娃机复位按钮.png"],
 				"roi": [7, 222, 101, 103]
 			}
 		},
@@ -292,7 +292,7 @@
 							"type": "TemplateMatch",
 							"param": {
 								"template": [
-									"minigame/catchtoy/娃娃机结算页面.png"
+									"playtime/catchtoy/娃娃机结算页面.png"
 								],
 								"roi": [36, 177, 677, 477]
 							}
@@ -359,8 +359,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": [
-					"minigame/catchtoy/抓娃娃绿色按钮.png",
-					"minigame/catchtoy/抓娃娃绿色按钮1.png"
+					"playtime/catchtoy/抓娃娃绿色按钮.png",
+					"playtime/catchtoy/抓娃娃绿色按钮1.png"
 				],
 				"roi": [98, 1095, 149, 121],
 				"threshold": 0.6,
@@ -385,8 +385,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": [
-					"minigame/catchtoy/抓娃娃蓝色按钮.png",
-					"minigame/catchtoy/抓娃娃蓝色按钮1.png"
+					"playtime/catchtoy/抓娃娃蓝色按钮.png",
+					"playtime/catchtoy/抓娃娃蓝色按钮1.png"
 				],
 				"roi": [253, 1095, 149, 139],
 				"threshold": 0.6,
@@ -411,8 +411,8 @@
 			"type": "TemplateMatch",
 			"param": {
 				"template": [
-					"minigame/catchtoy/抓娃娃粉色按钮.png",
-					"minigame/catchtoy/抓娃娃粉色按钮1.png"
+					"playtime/catchtoy/抓娃娃粉色按钮.png",
+					"playtime/catchtoy/抓娃娃粉色按钮1.png"
 				],
 				"roi": [421, 1103, 182, 123],
 				"threshold": 0.6,
