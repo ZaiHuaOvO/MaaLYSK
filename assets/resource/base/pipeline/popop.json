@@ -427,6 +427,19 @@
 			"param": {}
 		}
 	},
+	"退出手账保存1popop": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["task/weekly/完成盖章.png"],
+				"roi": [620, 1153, 100, 126]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		}
+	},
 	"网络连接失败popop": {
 		"recognition": {
 			"type": "OCR",
