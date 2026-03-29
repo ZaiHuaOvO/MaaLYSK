@@ -10,7 +10,7 @@
 			"name": "🛍️限时活动商城领取",
 			"entry": "进入活动商城领取",
 			"default_check": false,
-			"description": "[color:orange]当前版本：引魂照幽-夏以昼2.0日卡[/color]"
+			"description": "[color:orange]当前版本：引魂照幽-夏以昼2.0日卡[/color]\n\n请尽量确保代币足够再使用，不然会卡住"
 		},
 		{
 			"name": "🌟限时活动每日领取",
