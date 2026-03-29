@@ -34,7 +34,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/灯宵映礼.png"],
+				"template": ["event/signin/灯宵映礼.png"],
 				"roi": [85, 157, 350, 986]
 			}
 		},
@@ -67,7 +67,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/十日与你_祁煜驭夜灯阑.png"],
+				"template": ["event/signin/十日与你_祁煜驭夜灯阑.png"],
 				"roi": [85, 157, 350, 986]
 			}
 		},
@@ -81,7 +81,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/心动挚礼_祁煜共潮生.png"],
+				"template": ["event/signin/心动挚礼_祁煜共潮生.png"],
 				"roi": [85, 157, 350, 986]
 			}
 		},
