@@ -104,6 +104,10 @@
 				{
 					"name": "📅日常收尾",
 					"enabled": true
+				},
+				{
+					"name": "🌟限时活动每日领取",
+					"enabled": false
 				}
 			]
 		}
