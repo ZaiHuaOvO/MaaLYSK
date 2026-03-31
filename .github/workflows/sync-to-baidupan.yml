@@ -64,11 +64,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           REPO: ${{ github.repository }}
           APP_NAME: "MaaLYSK"
+          MIRROR: "https://ghproxy.com/"
         run: |
           pip install requests
           
           python3 << 'EOF'
-          import os, sys, requests, time, subprocess, hashlib
+          import os, sys, requests, time, subprocess, hashlib, json
           
           CLIENT_ID = os.environ.get('CLIENT_ID')
           CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
@@ -77,6 +78,7 @@ jobs:
           GH_TOKEN = os.environ.get('GH_TOKEN')
           REPO = os.environ.get('REPO')
           APP_NAME = os.environ.get('APP_NAME', 'MaaLYSK')
+          MIRROR = os.environ.get('MIRROR', '')
           
           FULL_PATH = f"/apps/{APP_NAME}{TARGET_PATH}"
           
@@ -85,7 +87,8 @@ jobs:
               sys.exit(1)
           
           print(f"=== MaaLYSK Sync to BaiduPan ===")
-          print(f"Target: {FULL_PATH}\n")
+          print(f"Target: {FULL_PATH}")
+          print(f"Mirror: {MIRROR if MIRROR else 'Direct (no mirror)'}\n")
           
           def refresh_token():
               url = "https://openapi.baidu.com/oauth/2.0/token"
@@ -110,9 +113,20 @@ jobs:
               result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
               return result.returncode == 0
           
+          def get_mirror_url(original_url):
+              if not MIRROR:
+                  return original_url
+              if original_url.startswith('https://github.com'):
+                  return MIRROR + original_url
+              return original_url
+          
           def upload_with_retry(token, file_url, filename, max_retries=3):
               full_path = f"{FULL_PATH.rstrip('/')}/{filename}"
               print(f"\n📦 {filename}")
+              
+              download_url = get_mirror_url(file_url)
+              if download_url != file_url:
+                  print(f"  🔗 Mirror: {download_url[:80]}...")
               
               for attempt in range(max_retries):
                   try:
@@ -120,20 +134,17 @@ jobs:
                           print(f"  🔄 Retry {attempt + 1}/{max_retries}...")
                           time.sleep(5)
                       
-                      # 下载文件
                       print("  ⬇️  Downloading...")
-                      r = requests.get(file_url, timeout=600)
+                      r = requests.get(download_url, timeout=600, stream=True)
                       r.raise_for_status()
                       content = r.content
                       size_mb = len(content) / 1024 / 1024
                       print(f"  📊 {size_mb:.2f} MB")
                       
-                      # 分片上传（8MB 一片）
-                      chunk_size = 8 * 1024 * 1024  # 8MB
+                      chunk_size = 8 * 1024 * 1024
                       chunks = [content[i:i+chunk_size] for i in range(0, len(content), chunk_size)]
                       block_list = [hashlib.md5(chunk).hexdigest() for chunk in chunks]
                       
-                      # precreate
                       print("  📝 Precreating...")
                       params = {
                           'method': 'precreate',
@@ -154,7 +165,6 @@ jobs:
                       upload_id = result.get('uploadid')
                       print(f"  ✓ Upload ID: {upload_id[:30]}...")
                       
-                      # 上传每个分片
                       print("  ⬆️  Uploading chunks...")
                       for i, chunk in enumerate(chunks):
                           params = {
@@ -172,7 +182,6 @@ jobs:
                               print(f"  ❌ Chunk {i} failed: {result}")
                               raise Exception(f"Chunk {i} upload failed")
                       
-                      # 创建文件
                       print("  📝 Creating file...")
                       params = {
                           'method': 'create',
@@ -202,14 +211,12 @@ jobs:
               
               return False
           
-          # 刷新 token
           access_token, new_refresh_token = refresh_token()
           
           if new_refresh_token != OLD_REFRESH_TOKEN and GH_TOKEN:
               if update_github_secret('BAIDU_REFRESH_TOKEN', new_refresh_token):
                   print("✓ Refresh token auto-updated\n")
           
-          # 读取文件列表
           with open('assets.txt') as f:
               assets = [line.strip().split('|') for line in f if line.strip()]
           
@@ -217,7 +224,7 @@ jobs:
               print("No assets to upload")
               sys.exit(0)
           
-          print(f"Found {len(assets)} file(s)")
+          print(f"\nFound {len(assets)} file(s)")
           for url, name in assets:
               print(f"  - {name}")
           
@@ -237,3 +244,6 @@ jobs:
         run: |
           echo "=== Upload Complete ==="
           echo "Location: /apps/MaaLYSK${{ steps.release.outputs.target_path }}"
+          echo ""
+          echo "Uploaded files:"
+          cat assets.txt
