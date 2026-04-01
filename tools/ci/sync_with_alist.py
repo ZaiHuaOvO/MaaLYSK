@@ -161,14 +161,17 @@ def refresh_storage(token, storage_id):
 def list_files(token, path):
     """获取指定路径下的文件列表"""
     list_url = f"{ALIST_URL}/api/fs/list"
-    headers = {"Authorization": token,"ngrok-skip-browser-warning": "true" }
+    headers = {"Authorization": token}
     payload = {"path": path, "page": 1, "per_page": 0}
+    print(f"  [DEBUG] 请求文件列表: {path}")
     try:
-        resp = requests.post(list_url, headers=headers, json=payload, timeout=15)
+        resp = session.post(list_url, headers=headers, json=payload, timeout=15)
         resp.raise_for_status()
         data = resp.json()
         if data.get("code") == 200:
-            return data.get("data", {}).get("content", [])
+            content = data.get("data", {}).get("content", [])
+            print(f"  [DEBUG] 找到 {len(content)} 个项目")
+            return content
         else:
             print(f"✗ 获取文件列表失败: {data.get('message')}")
             return None
@@ -267,14 +270,30 @@ def main():
             sys.exit(1)
 
         if latest_tag:
-            files_to_process = [f for f in all_files if latest_tag in f.get("name", "")]
-            if files_to_process:
-                print(
-                    f"✓ 已找到最新的 Release 文件: {[f['name'] for f in files_to_process]}"
-                )
-                break
+            # 打印 all_files 内容用于调试
+            print(f"  [DEBUG] all_files 中的项目: {[f.get('name') for f in all_files]}")
+            
+            # 找到版本文件夹
+            version_folder = None
+            for f in all_files:
+                print(f"  [DEBUG] 检查: {f.get('name')}, is_dir: {f.get('is_dir')}")
+                if f.get("is_dir") and latest_tag in f.get("name", ""):
+                    version_folder = f.get("name")
+                    break
+            
+            if version_folder:
+                print(f"✓ 找到版本文件夹: {version_folder}")
+                # 进入版本文件夹获取实际文件
+                folder_path = f"{SOURCE_DIR}/{version_folder}"
+                print(f"  正在获取 {folder_path} 中的文件列表...")
+                files_to_process = list_files(token, folder_path)
+                if files_to_process:
+                    print(f"✓ 找到 {len(files_to_process)} 个文件: {[f['name'] for f in files_to_process]}")
+                    break
+                else:
+                    print(f"! 版本文件夹 '{version_folder}' 中没有找到文件")
             else:
-                print(f"! 未在源目录中找到包含标签 '{latest_tag}' 的文件。")
+                print(f"! 未找到包含标签 '{latest_tag}' 的版本文件夹")
         else:
             files_to_process = all_files
             break
@@ -308,7 +327,6 @@ def main():
             continue
 
         date_str = datetime.now().strftime("%Y-%m-%d")
-        # 【修复】使用更安全的文件夹命名格式，避免特殊字符
         new_folder_name = safe_folder_name(f"{version} (发布于{date_str})")
         print(f"  - 版本: {version}, 目标文件夹: {new_folder_name}")
 
@@ -321,12 +339,13 @@ def main():
 
                 print(f"  * 匹配规则: {keywords}, 将分发到 {len(dest_paths)} 个位置。")
 
-                # 规则 4: 遍历目标，创建目录并上传
                 for base_path in dest_paths:
                     versioned_dest_path = f"{base_path.rstrip('/')}/{new_folder_name}"
 
                     if create_dir(token, versioned_dest_path):
-                        copy_file(token, SOURCE_DIR, versioned_dest_path, filename)
+                        # 源路径：版本文件夹路径
+                        src_dir = f"{SOURCE_DIR}/{latest_tag}"
+                        copy_file(token, src_dir, versioned_dest_path, filename)
                     else:
                         print(
                             f"  ✗ 未能创建目标目录 {versioned_dest_path}，跳过此目标的上传。"
@@ -339,7 +358,6 @@ def main():
             print("  - 未匹配到任何分发规则，跳过。")
 
     print("\n--- 所有文件处理完毕 ---")
-
 
 if __name__ == "__main__":
     main()
