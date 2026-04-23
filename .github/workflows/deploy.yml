@@ -8,6 +8,10 @@ on:
   push:
     branches: [master]
 
+  # 监听 release 发布（包括在网页上创建 tag 并发布 release）
+  release:
+    types: [published]
+
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
 
