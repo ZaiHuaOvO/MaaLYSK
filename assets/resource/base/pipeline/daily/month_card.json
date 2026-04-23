@@ -56,6 +56,41 @@
 			"type": "Click",
 			"param": {}
 		},
-		"next": ["stop"]
+		"next": [
+			"[JumpBack]鎏金礼·珍贵领取",
+			"[JumpBack]鎏金礼·璀璨领取",
+			"[JumpBack]退出获得奖励popop"
+		],
+		"on_error": ["null"]
+	},
+	"鎏金礼·珍贵领取": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": "shopping/daily/鎏金礼领取.png",
+				"roi": [300, 1060, 179, 90]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target_offset": [10, 5, -20, -10]
+			}
+		}
+	},
+	"鎏金礼·璀璨领取": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": "shopping/daily/鎏金礼领取.png",
+				"roi": [443, 1045, 196, 127]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target_offset": [10, 5, -20, -10]
+			}
+		}
 	}
 }
