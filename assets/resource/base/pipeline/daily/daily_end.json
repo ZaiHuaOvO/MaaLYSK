@@ -145,7 +145,7 @@
 		"post_delay": 500,
 		"focus": {
 			"Node.Recognition.Succeeded": {
-				"content": "[color:red]活跃值未满100，请手动完成[/color]",
+				"content": "<span style=\"color:red\">活跃值未满100，请手动完成</span>",
 				"display": "log"
 			},
 			"toast": "活跃值未满100，请手动检查"
@@ -220,7 +220,7 @@
 		},
 		"focus": {
 			"Node.PipelineNode.Failed": {
-				"content": "[color:red]日常签到已领过或领取失败,请检查[/color]",
+				"content": "<span style=\"color:red\">日常签到已领过或领取失败,请检查</span>",
 				"display": ["log"]
 			}
 		},
@@ -256,7 +256,7 @@
 			}
 		},
 		"focus": {
-			"Node.Action.Failed": "[color:red]日常签到领取失败,请手动领取[/color]",
+			"Node.Action.Failed": "<span style=\"color:red\">日常签到领取失败,请手动领取</span>",
 			"Node.Action.Succeeded": "日常签到成功!"
 		},
 		"post_delay": 2000,
@@ -287,7 +287,7 @@
 			}
 		},
 		"focus": {
-			"Node.Action.Failed": "[color:red]日常签到领取失败,请手动领取[/color]",
+			"Node.Action.Failed": "<span style=\"color:red\">日常签到领取失败,请手动领取</span>",
 			"Node.Action.Succeeded": "日常签到成功!"
 		},
 		"post_delay": 2000,
