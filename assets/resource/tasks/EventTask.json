@@ -133,14 +133,14 @@
 				{
 					"name": "press2",
 					"description": "第二个小跳长按的时长(ms),建议参数180-300",
-					"label": "第一个小跳按下时长",
+					"label": "第二个小跳按下时长",
 					"pipeline_type": "int",
 					"default": "220"
 				},
 				{
 					"name": "delay2",
 					"description": "第二个小跳识别的延时(ms),建议参数10-600",
-					"label": "第一个小跳按下时长",
+					"label": "第二个小跳延时",
 					"pipeline_type": "int",
 					"default": "50"
 				}
@@ -158,11 +158,10 @@
 		},
 		"刷到xx分停止": {
 			"type": "input",
-			"description": "刷到xx分停止",
 			"inputs": [
 				{
 					"name": "score",
-					"description": "默认刷满及20000",
+					"description": "默认刷满20000",
 					"label": "刷到xx分停止",
 					"pipeline_type": "string",
 					"default": "20000"
