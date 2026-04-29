@@ -296,7 +296,7 @@ jobs:
 
             **Full Changelog**: ${{ github.server_url }}/${{ github.repository }}/compare/${{ needs.meta.outputs.previous_tag }}...${{ needs.meta.outputs.tag }}
 
-            [已有 Mirror酱 CDK? 前往Mirror酱高速下载](https://mirrorchyan.com/zh/projects?source=maaydoc&rid=MaaLYSK)
+            [已有 Mirror酱 CDK? 前往Mirror酱高速下载](https://mirrorchyan.com/zh/projects?rid=MaaLYSK&source=MaaLYSK_Github_Release)
           prerelease: ${{ needs.meta.outputs.is_prerelease == 'true' }}
 
       - name: Trigger MirrorChyanUploading
