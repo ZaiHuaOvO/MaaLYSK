@@ -40,6 +40,7 @@
 		"next": [
 			"[JumpBack]选剧情选项",
 			"[JumpBack]跳过吹气",
+			"[JumpBack]剧情圈圈选项点一点",
 			"[JumpBack]自动过剧情点点",
 			"[JumpBack]live剧情等待"
 		],
@@ -125,6 +126,19 @@
 		},
 		"repeat": 5,
 		"repeat_delay": 300
+	},
+	"剧情圈圈选项点一点": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["剧情圈圈点一点.png"],
+				"roi": [57, 150, 621, 893]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		}
 	},
 	"选剧情选项": {
 		"recognition": {

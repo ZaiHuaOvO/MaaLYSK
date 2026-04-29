@@ -411,5 +411,29 @@
 			}
 		},
 		"next": []
+	},
+	"点击主线": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["开始", "始"],
+				"roi": [553, 1095, 155, 155]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"next": ["主线页面确认"]
+	},
+	"主线页面确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"expected": ["世界深处", "深处"],
+				"roi": [0, 1168, 154, 109]
+			}
+		},
+		"next": []
 	}
 }
