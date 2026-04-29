@@ -1,14 +1,49 @@
 {
+	"进入自动过剧情": {
+		"recognition": {
+			"type": "DirectHit",
+			"param": {}
+		},
+		"action": {
+			"type": "DoNothing",
+			"param": {}
+		},
+		"next": ["自动过剧情"]
+	},
 	"自动过剧情": {
 		"recognition": {
-			"type": "OCR",
+			"type": "Or",
 			"param": {
-				"expected": ["自动", "自", "动"],
-				"replace": [
-					["白", "自"],
-					["百", "自"]
-				],
-				"roi": [453, 1182, 69, 56]
+				"any_of": [
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["自动", "自", "动"],
+								"replace": [
+									["白", "自"],
+									["百", "自"],
+									["国", "自"]
+								],
+								"roi": [453, 1182, 69, 56]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["自动", "自", "动"],
+								"replace": [
+									["白", "自"],
+									["百", "自"],
+									["国", "自"]
+								],
+								"roi": [429, 1137, 126, 137]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -42,16 +77,45 @@
 			"[JumpBack]跳过吹气",
 			"[JumpBack]剧情圈圈选项点一点",
 			"[JumpBack]自动过剧情点点",
-			"[JumpBack]live剧情等待"
+			"[JumpBack]live剧情等待",
+			"[JumpBack]加载页面等待_竖屏",
+			"[JumpBack]加载页面等待_横屏"
 		],
 		"on_error": ["null"]
 	},
 	"自动过剧情点点": {
 		"recognition": {
-			"type": "OCR",
+			"type": "Or",
 			"param": {
-				"expected": ["自动", "自", "动"],
-				"roi": [473, 1203, 33, 18]
+				"any_of": [
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["自动", "自", "动"],
+								"replace": [
+									["白", "自"],
+									["百", "自"],
+									["国", "自"]
+								],
+								"roi": [453, 1182, 69, 56]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["自动", "自", "动"],
+								"replace": [
+									["白", "自"],
+									["百", "自"]
+								],
+								"roi": [429, 1137, 126, 137]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {

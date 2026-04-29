@@ -2,6 +2,8 @@
 	"导航回主页面": {
 		"next": [
 			"已在主页面",
+			"[JumpBack]加载页面等待_横屏",
+			"[JumpBack]加载页面等待_竖屏",
 			"[JumpBack]退出剧情回顾popop",
 			"[JumpBack]退出兑换码页面popop",
 			"[JumpBack]退出新娃娃获得popop",
@@ -47,6 +49,8 @@
 	},
 	"返回上一级页面": {
 		"next": [
+			"加载页面等待_横屏",
+			"加载页面等待_竖屏",
 			"退出剧情回顾popop",
 			"退出兑换码页面popop",
 			"退出新娃娃获得popop",
@@ -93,6 +97,8 @@
 	"退出各类弹窗": {
 		"timeout": 2000,
 		"next": [
+			"加载页面等待_横屏",
+			"加载页面等待_竖屏",
 			"退出剧情回顾popop",
 			"退出兑换码页面popop",
 			"退出新娃娃获得popop",
@@ -130,6 +136,8 @@
 	"退出各类弹窗(无快乐出游退出)": {
 		"timeout": 2000,
 		"next": [
+			"加载页面等待_横屏",
+			"加载页面等待_竖屏",
 			"退出剧情回顾popop",
 			"退出兑换码页面popop",
 			"退出新娃娃获得popop",
@@ -171,6 +179,8 @@
 			}
 		},
 		"next": [
+			"加载页面等待_横屏",
+			"加载页面等待_竖屏",
 			"取消返回陪我一起popop",
 			"取消返回快乐出游popop",
 			"确定返回陪我一起popop",
@@ -192,6 +202,26 @@
 			"param": {}
 		},
 		"next": []
+	},
+	"加载页面等待_横屏": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["mainmap/横屏加载页面.png"],
+				"roi": [32, 0, 753, 524]
+			}
+		},
+		"post_delay": 5000
+	},
+	"加载页面等待_竖屏": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": ["mainmap/竖屏加载页面.png"],
+				"roi": [39, 44, 583, 678]
+			}
+		},
+		"post_delay": 5000
 	},
 	"导航回主页面（主线绿码）": {
 		"recognition": {
