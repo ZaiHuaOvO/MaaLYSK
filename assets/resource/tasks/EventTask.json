@@ -9,35 +9,39 @@
 		},
 		{
 			"name": "🛍️限时活动商城领取",
-			"entry": "stop",
-			//"entry": "进入活动商城领取",
+			//	"entry": "stop",
+			"entry": "进入活动商城领取",
 			"default_check": false,
-			"description": "<span style=\"color:orange\">当前版本：目前关闭中</span><br>请尽量确保代币足够再使用，不然会卡住"
+			"description": "<span style=\"color:orange\">当前版本：热雾迷津</span><br>请尽量确保代币足够再使用，不然会卡住"
 		},
 		{
 			"name": "🌟限时活动每日领取",
-			"entry": "stop",
-			//"entry": "进入限时活动",
+			//	"entry": "stop",
+			"entry": "进入限时活动",
 			"default_check": false,
 			//"option": ["韶华宴岁领取", "吉财临门领取", "金叶盈福领取"],
-			"description": "<span style=\"color:orange\">当前版本：目前关闭中</span><br>限时活动领取每日任务奖励，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情"
+			"description": "<span style=\"color:orange\">当前版本：热雾迷津</span><br>限时活动领取每日任务奖励，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情"
 		},
 		{
 			"name": "✨限时活动读剧情",
-			"entry": "stop",
-			//"entry": "进入剧情",
-			"option": ["选择读的剧情"],
+			//"entry": "stop",
+			"entry": "进入节日活动读剧情",
+			//"option": ["选择读的剧情"],
 			"default_check": false,
-			"description": "<span style=\"color:orange\">当前版本：目前关闭中</span><br><span style=\"color:red\">尽量在剧情全解锁后再使用，生日剧情如有未解锁剧情，不会自动结束，最好单独进行！</span><br>限时活动读剧情，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情",
+			"description": "<span style=\"color:orange\">当前版本：温澜秘响</span><br><span style=\"color:red\">尽量在剧情全解锁后再使用，生日剧情如有未解锁剧情，不会自动结束，最好单独进行！</span><br>限时活动读剧情，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情",
 			"pipeline_override": {
 				"点成2倍速": {
 					"next": [
+						"[JumpBack]选剧情祁煜",
 						"[JumpBack]选剧情选项",
 						"[JumpBack]跳过吹气",
+						"[JumpBack]剧情圈圈选项点一点",
 						"[JumpBack]自动过剧情点点",
 						"[JumpBack]live剧情等待",
-						"[JumpBack]为他唱生日歌",
-						"[JumpBack]结束唱歌"
+						//	"[JumpBack]为他唱生日歌",
+						//	"[JumpBack]结束唱歌",
+						"[JumpBack]加载页面等待_竖屏",
+						"[JumpBack]加载页面等待_横屏"
 					]
 				}
 			}
@@ -45,11 +49,10 @@
 		{
 			"name": "🌈限时活动小游戏",
 			//"entry": "stop",
-			//"entry": "进入限时活动小游戏",
-			"entry": "进入叮咚奇跃",
+			"entry": "进入限时活动小游戏",
 			"default_check": false,
 			"option": ["刷到xx分停止", "叮咚奇跃参数自定义"],
-			"description": "<span style=\"color:orange\">当前版本：叮咚奇跃</span><br>1、抓第一关60积分结束，需保证进入页面为第一关。<br>2、由于各自电脑延时网络状况不同，开放自定义参数口，不会调的就默认试试，<br>3、对电脑性能要求可能较高，性能差的可能无法4-5局才有60，酌情考虑使用。<br>4、总体耗时较长，如果挂机闪退了休息一会再重开<br>限时活动小游戏，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情"
+			"description": "<span style=\"color:orange\">当前版本：目前关闭在</span><br>1、抓第一关60积分结束，需保证进入页面为第一关。<br>2、由于各自电脑延时网络状况不同，开放自定义参数口，不会调的就默认试试，<br>3、对电脑性能要求可能较高，性能差的可能无法4-5局才有60，酌情考虑使用。<br>4、总体耗时较长，如果挂机闪退了休息一会再重开<br>限时活动小游戏，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情"
 		}
 	],
 	"option": {
@@ -62,7 +65,7 @@
 					"description": "制作衣帽间的衣服并过对话剧情",
 
 					"pipeline_override": {
-						"进入剧情": {
+						"进入生日剧情": {
 							"next": ["进入衣帽间制作"]
 						}
 					}
@@ -71,7 +74,7 @@
 					"name": "4段生日剧情",
 					"description": "生日活动页面，4段生日剧情",
 					"pipeline_override": {
-						"进入剧情": {
+						"进入生日剧情": {
 							"next": ["进入生日读剧情"]
 						}
 					},

@@ -1,5 +1,5 @@
 {
-	"进入活动读剧情": {
+	"进入节日活动读剧情": {
 		"recognition": {
 			"type": "DirectHit",
 			"param": {}
@@ -22,7 +22,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/韶华宴岁菜单.png"],
+				"template": ["event/daily_get/热雾迷津菜单.png"],
 				"roi": [10, 1179, 701, 79]
 			}
 		},
@@ -32,9 +32,12 @@
 		},
 		"post_delay": 1000,
 		"repeat": 3,
-		"next": ["[JumpBack]韶华宴岁切换人物", "[JumpBack]韶华宴岁切换人物准备"]
+		"next": [
+			"[JumpBack]节日活动剧情切换人物",
+			"[JumpBack]节日活动剧情切换人物准备"
+		]
 	},
-	"韶华宴岁切换人物": {
+	"节日活动剧情切换人物": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
@@ -48,9 +51,9 @@
 		},
 		"max_hit": 6,
 		"next": [
+			"活动剧情_选择祁煜",
 			"活动剧情_选择沈星回",
 			"活动剧情_选择黎深",
-			"活动剧情_选择祁煜",
 			"活动剧情_选择秦彻",
 			"活动剧情_选择夏以昼"
 		]
@@ -60,7 +63,7 @@
 			"type": "OCR",
 			"param": {
 				"expected": ["沈星回", "沈", "星", "回"],
-				"roi": [185, 324, 153, 75]
+				"roi": [177, 319, 154, 76]
 			}
 		},
 		"action": {
@@ -81,7 +84,7 @@
 			"type": "OCR",
 			"param": {
 				"expected": ["黎深", "黎"],
-				"roi": [446, 511, 143, 76]
+				"roi": [375, 530, 144, 77]
 			}
 		},
 		"action": {
@@ -102,7 +105,7 @@
 			"type": "OCR",
 			"param": {
 				"expected": ["祁煜", "祁"],
-				"roi": [201, 716, 143, 76]
+				"roi": [172, 752, 144, 76]
 			}
 		},
 		"action": {
@@ -123,7 +126,7 @@
 			"type": "OCR",
 			"param": {
 				"expected": ["秦彻", "秦"],
-				"roi": [452, 907, 144, 76]
+				"roi": [409, 936, 145, 77]
 			}
 		},
 		"action": {
@@ -144,7 +147,7 @@
 			"type": "OCR",
 			"param": {
 				"expected": ["夏以昼", "夏"],
-				"roi": [171, 1093, 172, 83]
+				"roi": [166, 1115, 173, 83]
 			}
 		},
 		"action": {
@@ -164,8 +167,8 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/闲情琐记剧情.png"],
-				"roi": [558, 250, 161, 179]
+				"template": ["event/温澜秘响剧情.png"],
+				"roi": [18, 921, 185, 139]
 			}
 		},
 		"action": {
@@ -212,15 +215,28 @@
 	},
 	"找找未读剧情0": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [231, 304, 104, 112],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -234,15 +250,28 @@
 
 	"找找未读剧情1": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [406, 402, 104, 112],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [429, 459, 106, 114]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [429, 459, 106, 114]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -255,15 +284,28 @@
 	},
 	"找找未读剧情2": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [213, 558, 104, 112],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [250, 579, 106, 114]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [250, 579, 106, 114]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -276,15 +318,28 @@
 	},
 	"找找未读剧情3": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [409, 677, 105, 113],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [456, 717, 106, 114]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [456, 717, 106, 114]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -297,15 +352,28 @@
 	},
 	"找找未读剧情4": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [180, 854, 105, 113],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [221, 839, 106, 114]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [221, 839, 106, 114]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -318,15 +386,28 @@
 	},
 	"找找未读剧情5": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [388, 973, 105, 113],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [403, 994, 106, 114]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [403, 994, 106, 114]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -335,19 +416,32 @@
 		},
 		"post_delay": 2000,
 		"next": ["自动过剧情"],
-		"on_error": ["找找未读剧情5"]
+		"on_error": ["null"]
 	},
 	"找找未读剧情6": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [184, 879, 122, 97],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -360,15 +454,28 @@
 	},
 	"找找未读剧情7": {
 		"recognition": {
-			"type": "TemplateMatch",
+			"type": "Or",
 			"param": {
-				"template": [
-					"event/剧情标志1.png",
-					"event/剧情标志2.png",
-					"event/剧情标志3.png"
-				],
-				"roi": [437, 1079, 134, 109],
-				"threshold": 0.6
+				"any_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": ["event/剧情标志1.png"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["体验中", "验中"],
+								"roi": [273, 322, 105, 113]
+							}
+						}
+					}
+				]
 			}
 		},
 		"action": {
@@ -379,7 +486,7 @@
 		"next": ["自动过剧情"],
 		"on_error": ["找找未读剧情7"]
 	},
-	"韶华宴岁签字": {
+	"热雾迷津签字": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -392,12 +499,12 @@
 			"param": {"target_offset": [154, 11, -83, -18]}
 		},
 		"next": [
-			"韶华宴岁剧情结束",
+			"热雾迷津剧情结束",
 			"[JumpBack]自动过剧情",
 			"[JumpBack]退出点击空白继续popop"
 		]
 	},
-	"韶华宴岁剧情结束": {
+	"热雾迷津剧情结束": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -406,16 +513,16 @@
 			}
 		},
 		"next": [
-			"回到韶华宴岁主页面",
+			"回到热雾迷津主页面",
 			"[JumpBack]返回上一级页面",
 			"[JumpBack]退出点击空白继续popop"
 		]
 	},
-	"韶华宴岁切换人物准备": {
+	"节日活动剧情切换人物准备": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
-				"expected": ["闲情琐记", "闲情", "琐记"],
+				"expected": ["温澜秘响", "温澜", "秘响"],
 				"roi": [13, 99, 252, 118]
 			}
 		},
@@ -424,13 +531,13 @@
 			"param": {}
 		},
 		"next": [
-			"回到韶华宴岁主页面",
+			"回到热雾迷津主页面",
 			"[JumpBack]返回上一级页面",
 			"[JumpBack]自动过剧情",
 			"[JumpBack]退出点击空白继续popop"
 		]
 	},
-	"回到韶华宴岁主页面": {
+	"回到热雾迷津主页面": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
