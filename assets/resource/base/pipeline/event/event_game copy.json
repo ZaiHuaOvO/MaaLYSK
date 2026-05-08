@@ -8,7 +8,7 @@
 			"type": "DoNothing",
 			"param": {}
 		},
-		"next": ["进入邀约花笺"]
+		"next": ["进入心隙拾意"]
 	},
 	"进入邀约花笺": {
 		"recognition": {
