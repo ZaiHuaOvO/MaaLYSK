@@ -3,6 +3,7 @@ docs/node_modules
 docs/.vuepress/.temp
 docs/.vitepress/dist
 docs/.vitepress/cache
+.vitepress/cache
 # Prerequisites
 *.d
 
@@ -442,7 +443,10 @@ enc_temp_folder/*
 .nuke/temp/*
 
 # Build
-deps
+deps/*
+!deps/tools/
+deps/tools/*
+!deps/tools/*.schema.json
 build
 install
 
