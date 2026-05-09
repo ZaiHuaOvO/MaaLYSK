@@ -37,7 +37,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/韶华宴岁菜单.png"],
+				"template": ["event/韶华宴岁(2026新年活动)/韶华宴岁菜单.png"],
 				"roi": [10, 1179, 701, 79]
 			}
 		},
@@ -127,7 +127,9 @@
 						"recognition": {
 							"type": "TemplateMatch",
 							"param": {
-								"template": ["event/吉财临门领取.png"],
+								"template": [
+									"event/韶华宴岁(2026新年活动)/吉财临门/吉财临门领取.png"
+								],
 								"roi": [648, 137, 73, 1023],
 								"green_mask": true
 							}
@@ -212,7 +214,9 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/金叶盈福.png"],
+				"template": [
+					"event/韶华宴岁(2026新年活动)/金叶盈福/金叶盈福.png"
+				],
 				"roi": [85, 157, 350, 986]
 			}
 		},
@@ -227,7 +231,9 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/金叶盈福摇福.png"],
+				"template": [
+					"event/韶华宴岁(2026新年活动)/金叶盈福/金叶盈福摇福.png"
+				],
 				"roi": [227, 551, 270, 286]
 			}
 		},

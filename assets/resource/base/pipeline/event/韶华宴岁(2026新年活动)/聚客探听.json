@@ -22,7 +22,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/韶华宴岁菜单.png"],
+				"template": ["event/韶华宴岁(2026新年活动)/韶华宴岁菜单.png"],
 				"roi": [10, 1179, 701, 79]
 			}
 		},
@@ -191,7 +191,9 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/聚客探听.png"],
+				"template": [
+					"event/韶华宴岁(2026新年活动)/聚客探听/聚客探听.png"
+				],
 				"roi": [82, 995, 155, 152]
 			}
 		},
@@ -352,7 +354,9 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/放心探听.png"],
+				"template": [
+					"event/韶华宴岁(2026新年活动)/聚客探听/放心探听.png"
+				],
 				"roi": [117, 1133, 106, 106]
 			}
 		},
@@ -397,7 +401,9 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/讨论圆环页面.png"],
+				"template": [
+					"event/韶华宴岁(2026新年活动)/聚客探听/讨论圆环页面.png"
+				],
 				"roi": [121, 911, 221, 171]
 			}
 		},

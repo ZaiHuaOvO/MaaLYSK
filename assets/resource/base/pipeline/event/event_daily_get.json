@@ -1,15 +1,4 @@
 {
-	"进入限时活动": {
-		"recognition": {
-			"type": "DirectHit",
-			"param": {}
-		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"next": ["进入热雾迷津"]
-	},
 	"进入热雾迷津": {
 		"recognition": {
 			"type": "DirectHit",

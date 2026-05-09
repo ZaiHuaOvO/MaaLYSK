@@ -1,0 +1,38 @@
+{
+	"选择撩动氤氲1": {
+		"recognition": {
+			"type": "And",
+			"param": {
+				"all_of": [
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": "event/热雾迷津(202605温泉卡)/撩动氤氲/剧情完成标志.png",
+								"threshold": 0.8,
+								"roi": [0, 0, 1920, 1080]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": "1",
+								"threshold": 0.8,
+								"roi": [0, 0, 1920, 1080]
+							}
+						}
+					}
+				],
+				"box_index": 0
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": true
+			}
+		}
+	}
+}

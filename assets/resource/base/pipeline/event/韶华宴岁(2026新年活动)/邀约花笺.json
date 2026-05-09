@@ -1,15 +1,4 @@
 {
-	"进入限时活动小游戏": {
-		"recognition": {
-			"type": "DirectHit",
-			"param": {}
-		},
-		"action": {
-			"type": "DoNothing",
-			"param": {}
-		},
-		"next": ["进入心隙拾意"]
-	},
 	"进入邀约花笺": {
 		"recognition": {
 			"type": "DirectHit",
@@ -33,7 +22,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/韶华宴岁菜单.png"],
+				"template": ["event/韶华宴岁(2026新年活动)/韶华宴岁菜单.png"],
 				"roi": [10, 1179, 701, 79]
 			}
 		},
@@ -202,7 +191,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/邀约花笺.png"],
+				"template": ["event/韶华宴岁(2026新年活动)/邀约花笺.png"],
 				"roi": [433, 622, 173, 126]
 			}
 		},

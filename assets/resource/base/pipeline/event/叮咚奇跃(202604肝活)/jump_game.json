@@ -22,7 +22,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/叮咚奇跃菜单.png"],
+				"template": ["event/叮咚奇跃(202604肝活)/叮咚奇跃菜单.png"],
 				"roi": [10, 1179, 701, 79]
 			}
 		},
@@ -53,7 +53,7 @@
 						"recognition": {
 							"type": "TemplateMatch",
 							"param": {
-								"template": "event/进入玩梦启程.png",
+								"template": "event/叮咚奇跃(202604肝活)/进入玩梦启程.png",
 								"roi": [3, 726, 269, 221]
 							}
 						}
@@ -72,7 +72,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": "event/球球位置.png",
+				"template": "event/叮咚奇跃(202604肝活)/球球位置.png",
 				"roi": [278, 520, 169, 125]
 			}
 		},
@@ -92,7 +92,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": "event/球球位置.png",
+				"template": "event/叮咚奇跃(202604肝活)/球球位置.png",
 				"roi": [175, 475, 208, 143]
 			}
 		},
@@ -111,7 +111,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": "event/退出跳跳.png",
+				"template": "event/叮咚奇跃(202604肝活)/退出跳跳.png",
 				"roi": [0, 5, 103, 130]
 			}
 		},
