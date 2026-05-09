@@ -26,9 +26,9 @@
 			"name": "✨限时活动读剧情",
 			//"entry": "stop",
 			"entry": "进入节日活动读剧情",
-			//"option": ["选择读的剧情"],
+			"option": ["选择读的热雾迷津剧情"],
 			"default_check": false,
-			"description": "<span style=\"color:orange\">当前版本：温澜秘响</span><br><span style=\"color:red\">尽量在剧情全解锁后再使用，生日剧情如有未解锁剧情，不会自动结束，最好单独进行！</span><br>限时活动读剧情，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情",
+			"description": "<span style=\"color:orange\">当前版本：热雾迷津</span><br><span style=\"color:red\">尽量在剧情全解锁后再使用，生日剧情如有未解锁剧情，不会自动结束，最好单独进行！</span><br>限时活动读剧情，初步适配了进入活动读剧情，如果有问题就提前进入一次页面过下剧情。<br><span style=\"color:red\">撩动氤氲划动雾气如果划不上，手动划一下即可。</span>",
 			"pipeline_override": {
 				"点成2倍速": {
 					"next": [
@@ -56,8 +56,53 @@
 		}
 	],
 	"option": {
-		"选择读的剧情": {
+		"选择读的热雾迷津剧情": {
 			"type": "select",
+			"label": "选择读的剧情",
+			"description": "热雾迷津--温澜秘响or撩动氤氲",
+			"cases": [
+				{
+					"name": "温澜秘响",
+					"description": "消耗云雾团糕读温澜秘响剧情",
+
+					"pipeline_override": {
+						"选择剧情菜单": {
+							"recognition": {
+								"type": "TemplateMatch",
+								"param": {
+									"template": [
+										"event/热雾迷津(202605温泉卡)/温澜秘响剧情.png"
+									],
+									"roi": [18, 921, 185, 139]
+								}
+							},
+							"next": ["有剩余剧情体力", "没有剩余剧情体力"]
+						}
+					}
+				},
+				{
+					"name": "撩动氤氲",
+					"description": "消耗和鸣泉水读撩动氤氲剧情",
+					"pipeline_override": {
+						"选择剧情菜单": {
+							"recognition": {
+								"type": "TemplateMatch",
+								"param": {
+									"template": [
+										"event/热雾迷津(202605温泉卡)/撩动氤氲剧情.png"
+									],
+									"roi": [167, 1015, 153, 143]
+								}
+							},
+							"next": ["进入撩动氤氲页面"]
+						}
+					}
+				}
+			]
+		},
+		"选择读的生日剧情": {
+			"type": "select",
+			"label": "选择读的剧情",
 			"description": "选择衣帽间对话还是生日剧情",
 			"cases": [
 				{

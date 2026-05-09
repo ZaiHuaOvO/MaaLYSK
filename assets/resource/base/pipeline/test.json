@@ -36,6 +36,11 @@
 			"type": "DoNothing",
 			"param": {}
 		},
-		"next": []
+
+		"next": [
+			"撩动氤氲结束",
+			"[JumpBack]划动挥散雾气",
+			"[JumpBack]撩动氤氲剧情点点"
+		]
 	}
 }

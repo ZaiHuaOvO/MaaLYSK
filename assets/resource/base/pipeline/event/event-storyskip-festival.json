@@ -167,7 +167,7 @@
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
-				"template": ["event/温澜秘响剧情.png"],
+				"template": ["event/热雾迷津(202605温泉卡)/温澜秘响剧情.png"],
 				"roi": [18, 921, 185, 139]
 			}
 		},
