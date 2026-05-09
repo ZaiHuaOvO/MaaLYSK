@@ -72,6 +72,7 @@
 				"target_offset": [-3, -106, -55, 13]
 			}
 		},
+		"pre_delay": 1000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -93,6 +94,7 @@
 				"target_offset": [-19, -103, -8, 9]
 			}
 		},
+		"pre_delay": 1000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -114,6 +116,7 @@
 				"target_offset": [-6, -110, -36, 7]
 			}
 		},
+		"pre_delay": 1000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -135,6 +138,7 @@
 				"target_offset": [14, -112, -60, -9]
 			}
 		},
+		"pre_delay": 1000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -156,6 +160,7 @@
 				"target_offset": [13, -114, -80, -4]
 			}
 		},
+		"pre_delay": 1000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -175,6 +180,8 @@
 			"type": "Click",
 			"param": {}
 		},
+		"pre_delay": 4000,
+		"post_delay": 1500,
 		"timeout": 10000,
 		"next": ["有剩余剧情体力", "没有剩余剧情体力"],
 		"on_error": ["null"]
