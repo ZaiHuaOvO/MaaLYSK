@@ -50,6 +50,7 @@
 			"param": {}
 		},
 		"max_hit": 6,
+		"post_delay": 3000,
 		"next": [
 			"活动剧情_选择祁煜",
 			"活动剧情_选择沈星回",
@@ -73,6 +74,7 @@
 			}
 		},
 		"pre_delay": 1000,
+		"post_delay": 3000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -95,6 +97,7 @@
 			}
 		},
 		"pre_delay": 1000,
+		"post_delay": 3000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -117,6 +120,7 @@
 			}
 		},
 		"pre_delay": 1000,
+		"post_delay": 3000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -139,6 +143,7 @@
 			}
 		},
 		"pre_delay": 1000,
+		"post_delay": 3000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -161,6 +166,7 @@
 			}
 		},
 		"pre_delay": 1000,
+		"post_delay": 3000,
 		"enabled": true,
 		"max_hit": 1,
 		"timeout": 10000,
@@ -190,8 +196,8 @@
 		"recognition": {
 			"type": "OCR",
 			"param": {
-				"expected": ["^[1-9]$", "^[1-9][0-9]$"],
-				"roi": [670, 56, 50, 32]
+				"expected": ["^[0-9]$", "^[1-9][0-9]$"], //暂时改成任意识别，10容易识别成0
+				"roi": [651, 41, 67, 58]
 			}
 		},
 		"timeout": 8000,
@@ -201,7 +207,8 @@
 			"[JumpBack]找找未读剧情2",
 			"[JumpBack]找找未读剧情3",
 			"[JumpBack]找找未读剧情4",
-			"[JumpBack]找找未读剧情5"
+			"[JumpBack]找找未读剧情5",
+			"温澜秘响剧情结束"
 		],
 		"on_error": ["null"]
 	},
@@ -493,32 +500,15 @@
 		"next": ["自动过剧情"],
 		"on_error": ["找找未读剧情7"]
 	},
-	"热雾迷津签字": {
+	"温澜秘响剧情结束": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
-				"expected": ["确认签字", "确认", "签字", "确"],
-				"roi": [217, 873, 167, 84]
+				"expected": ["已体验", "已体"],
+				"roi": [376, 1011, 178, 105]
 			}
 		},
-		"action": {
-			"type": "Click",
-			"param": {"target_offset": [154, 11, -83, -18]}
-		},
-		"next": [
-			"热雾迷津剧情结束",
-			"[JumpBack]自动过剧情",
-			"[JumpBack]退出点击空白继续popop"
-		]
-	},
-	"热雾迷津剧情结束": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"expected": ["冠冕与剧章", "剧章", "剧", "冠"],
-				"roi": [239, 128, 228, 64]
-			}
-		},
+		"post_delay": 2000,
 		"next": [
 			"回到热雾迷津主页面",
 			"[JumpBack]返回上一级页面",
@@ -556,5 +546,36 @@
 			"type": "DoNothing",
 			"param": {}
 		}
+	},
+	"过剧情结束标志-热雾迷津": {
+		"recognition": {
+			"type": "Or",
+			"param": {
+				"any_of": [
+					{
+						"recognition": {
+							"type": "OCR",
+							"param": {
+								"expected": ["温澜秘响", "温澜", "秘响"],
+								"roi": [13, 99, 252, 118]
+							}
+						}
+					},
+					{
+						"recognition": {
+							"type": "TemplateMatch",
+							"param": {
+								"template": [
+									"event/热雾迷津(202605温泉卡)/温澜秘响剧情.png"
+								],
+								"roi": [18, 921, 185, 139],
+								"threshold": 0.5
+							}
+						}
+					}
+				]
+			}
+		},
+		"post_delay": 2000
 	}
 }

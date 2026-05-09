@@ -12,8 +12,36 @@
 			"param": {}
 		},
 		"timeout": 10000,
-		"next": ["进入撩动氤氲页面"],
+		"next": [
+			"进入撩动氤氲页面",
+			"[JumpBack]自动过剧情",
+			"[JumpBack]首次进入撩动氤氲"
+		],
 		"on_error": ["null"]
+	},
+	"首次进入撩动氤氲": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": "event/热雾迷津(202605温泉卡)/撩动氤氲/首次进入撩动氤氲.png",
+				"roi": [263, 741, 180, 143]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {}
+		},
+		"next": ["撩动氤氲点点"]
+	},
+	"撩动氤氲点点": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [634, 447, 18, 19]
+			}
+		},
+		"repeat": 10,
+		"repeat_delay": 400
 	},
 	"进入撩动氤氲页面": {
 		"recognition": {
