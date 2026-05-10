@@ -82,6 +82,8 @@
 			"[JumpBack]剧情圈圈选项点一点",
 			"[JumpBack]自动过剧情点点",
 			"[JumpBack]live剧情等待",
+			"[JumpBack]为他唱生日歌",
+			"[JumpBack]结束唱歌",
 			"[JumpBack]加载页面等待_竖屏",
 			"[JumpBack]加载页面等待_横屏"
 		],
@@ -177,6 +179,7 @@
 				"target": [353, 1025, 15, 23]
 			}
 		},
+		"enabled": false,
 		"timeout": 6000,
 		"next": ["结束唱歌"],
 		"on_error": ["null"]
@@ -195,6 +198,7 @@
 				"target": [299, 1058, 50, 31]
 			}
 		},
+		"enabled": false,
 		"repeat": 5,
 		"repeat_delay": 300
 	},
