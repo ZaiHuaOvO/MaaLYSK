@@ -48,7 +48,7 @@
         0 0 0 1px rgba(151, 140, 255, 0.08) inset,
         0 6px 18px rgba(151, 140, 255, 0.16);
     color: #30313d;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
 }
@@ -69,6 +69,53 @@
 .nav-contact-link svg {
     width: 18px;
     height: 18px;
+}
+
+.nav-contact-group {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .nav-contact-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+    }
+}
+
+.nav-contact-divider {
+    width: 1px;
+    height: 24px;
+    background-color: var(--vp-c-divider);
+    margin: 0 16px;
+}
+
+.nav-contact-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-1);
+    margin-right: 2px;
+}
+
+.nav-contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    color: var(--vp-c-text-2);
+    transition: color 0.5s;
+}
+
+.nav-contact-icon:hover {
+    color: var(--vp-c-text-1);
+    transition: color 0.25s;
+}
+
+.nav-contact-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .dark .nav-version-badge {
