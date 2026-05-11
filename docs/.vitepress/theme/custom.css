@@ -83,7 +83,44 @@
     color: #f0efff;
 }
 
-/* --- Contact group --- */
+/* --- "联系我们" label before social links (desktop ≥1280px) --- */
+/*  ::before = VitePress native divider (untouched)                     */
+/*  ::after  = label text, placed between divider and icons via order   */
+
+.VPNavBarSocialLinks::after {
+    content: '联系我们';
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-1);
+}
+
+.VPNavBarSocialLinks .VPSocialLink {
+    order: 1;
+}
+
+/* --- "..." overflow: social links centered with label (tablet 768-1280px) --- */
+
+.VPNavBarExtra .VPSocialLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.VPNavBarExtra .VPSocialLinks::before {
+    content: '联系我们';
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vp-c-text-2);
+    margin-right: 0;
+    margin-bottom: 6px;
+}
+
+/* --- Contact group (mobile nav screen only) --- */
 
 .nav-contact-group {
     display: none;
@@ -95,10 +132,6 @@
 
 .nav-contact-label {
     display: none;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--vp-c-text-1);
-    margin-right: 2px;
 }
 
 .nav-contact-icon {
@@ -122,14 +155,13 @@
     fill: currentColor;
 }
 
-/* ==================== Mobile (≤767px) ==================== */
+/* ==================== Mobile (≤767px) — DON'T TOUCH ==================== */
 
 @media (max-width: 767px) {
     .VPNavBar .content-body {
         position: relative !important;
     }
 
-    /* Hide nav menu version, show outside badge */
     .VPNavBarMenu .nav-version-link {
         display: none;
     }
@@ -143,13 +175,16 @@
         z-index: 1;
     }
 
-    /* Hide contact from navbar */
     .VPNavBar .nav-contact-group {
+        display: none;
+    }
+
+    .VPNavScreen .VPSocialLinks {
         display: none;
     }
 }
 
-/* Mobile nav screen: contact at bottom, centered */
+/* Mobile nav screen: contact at bottom, centered — DON'T TOUCH */
 .VPNavScreen .nav-contact-group {
     display: block;
     text-align: center;
@@ -191,7 +226,6 @@
     fill: currentColor;
 }
 
-/* Hide version in hamburger menu */
 .VPNavScreen .nav-version-link {
     display: none;
 }
@@ -199,37 +233,7 @@
 /* ==================== Tablet & Desktop (≥768px) ==================== */
 
 @media (min-width: 768px) {
-    /* Show version as nav menu item, hide outside badge */
     .nav-version-mobile {
         display: none;
-    }
-
-    /* Contact in navbar with divider + label */
-    .nav-contact-group {
-        display: inline-flex;
-        align-items: center;
-        gap: 2px;
-    }
-
-    .nav-contact-icon {
-        width: 36px;
-        height: 36px;
-    }
-
-    .nav-contact-icon svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .nav-contact-divider {
-        display: block;
-        width: 1px;
-        height: 24px;
-        background-color: var(--vp-c-divider);
-        margin: 0 16px;
-    }
-
-    .nav-contact-label {
-        display: inline;
     }
 }

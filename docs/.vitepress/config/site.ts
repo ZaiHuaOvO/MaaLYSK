@@ -1,4 +1,5 @@
 import { latestReleaseMeta } from "./version";
+import { qqGroupLink, githubRepoLink, qqIconSvg } from "./constants";
 
 export const siteConfig = {
     base: "/",
@@ -19,6 +20,10 @@ export const siteConfig = {
 export const sharedThemeConfig = {
     logo: "/logo.ico",
     latestReleaseMeta,
+    socialLinks: [
+        { icon: { svg: qqIconSvg }, link: qqGroupLink, ariaLabel: 'QQ群' },
+        { icon: 'github', link: githubRepoLink },
+    ],
     search: {
         provider: "local",
         options: {

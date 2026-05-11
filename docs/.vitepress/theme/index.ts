@@ -23,7 +23,6 @@ export default {
                     innerHTML: `<span class="nav-version-badge"><span class="nav-version-spark">✦</span><span>${meta.version}</span></span>`
                 }) : null;
             },
-            "nav-bar-content-after": () => h(NavContactGroup),
             "nav-screen-content-after": () => h(NavContactGroup),
             "doc-bottom": () => h(BackToTop),
         });
