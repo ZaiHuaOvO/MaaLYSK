@@ -3,6 +3,7 @@ import {h} from "vue";
 import {useData} from "vitepress";
 import BackToTop from "./components/BackToTop.vue";
 import NavContactGroup from "./components/NavContactGroup.vue";
+import ReadingTime from "./components/ReadingTime.vue";
 import "./custom.css";
 import Mermaid from "./components/Mermaid.vue";
 import Flowchart from './components/Flowchart.vue'
@@ -24,6 +25,7 @@ export default {
                 }) : null;
             },
             "nav-screen-content-after": () => h(NavContactGroup),
+            "doc-before": () => h(ReadingTime),
             "doc-bottom": () => h(BackToTop),
         });
     },
