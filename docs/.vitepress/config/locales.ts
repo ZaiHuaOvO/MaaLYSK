@@ -11,7 +11,7 @@ export const locales = {
                 text: '在 GitHub 上编辑此页',
             },
             outline: {
-                level: [2, 3],
+                level: [2, 3] as [number, number],
                 label: "本页导航",
             },
             darkModeSwitchLabel: '切换主题',
@@ -58,7 +58,7 @@ export const locales = {
                 text: 'Edit this page on GitHub',
             },
             outline: {
-                level: [2, 3],
+                level: [2, 3] as [number, number],
                 label: 'On this page',
             },
             sidebarMenuLabel: 'Menu',
