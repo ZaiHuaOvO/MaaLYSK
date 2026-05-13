@@ -23,6 +23,15 @@ export const locales = {
                 prev: '上一页',
                 next: '下一页',
             },
+            lastUpdated: {
+                text: '最后更新',
+            },
+            notFound: {
+                title: '页面未找到',
+                quote: '你来到了没有知识的荒原',
+                linkLabel: '返回首页',
+                linkText: '带我回家',
+            },
             nav: zhNav,
             sidebar: {
                 "/zh_cn/manual/": [
@@ -57,6 +66,15 @@ export const locales = {
             docFooter: {
                 prev: 'Previous page',
                 next: 'Next page',
+            },
+            lastUpdated: {
+                text: 'Last updated',
+            },
+            notFound: {
+                title: 'Page not found',
+                quote: 'You have found a desolate land without knowledge',
+                linkLabel: 'Go to home',
+                linkText: 'Take me home',
             },
             nav: enNav,
             sidebar: {

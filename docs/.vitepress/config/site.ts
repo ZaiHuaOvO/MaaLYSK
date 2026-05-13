@@ -27,6 +27,7 @@ export const sharedThemeConfig = {
     editLink: {
         pattern: 'https://github.com/Witty36/MaaLYSK/edit/main/docs/:path',
     },
+    lastUpdated: true,
     search: {
         provider: "local",
         options: {
@@ -56,6 +57,12 @@ export const sharedThemeConfig = {
                         },
                         modal: {
                             noResultsText: "No results for",
+                            resetButtonTitle: "Clear query",
+                            footer: {
+                                selectText: "Select",
+                                navigateText: "Switch",
+                                closeText: "Close",
+                            },
                         },
                     },
                 },
