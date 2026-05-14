@@ -8,6 +8,7 @@ import SocialTitles from "./components/SocialTitles.vue";
 import AnnouncementPopup from "./components/AnnouncementPopup.vue";
 import ReleaseContent from "./components/ReleaseContent.vue";
 import PopupPage from "./components/PopupPage.vue";
+import SmartDownloadChannels from "./components/SmartDownloadChannels.vue";
 import "./custom.css";
 import Mermaid from "./components/Mermaid.vue";
 import Flowchart from './components/Flowchart.vue'
@@ -40,5 +41,6 @@ export default {
         app.component('Flowchart', Flowchart);
         app.component('ReleaseContent', ReleaseContent);
         app.component('PopupPage', PopupPage);
+        app.component('SmartDownloadChannels', SmartDownloadChannels);
     },
 };
