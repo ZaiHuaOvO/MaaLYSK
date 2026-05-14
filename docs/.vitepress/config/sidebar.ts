@@ -38,3 +38,20 @@ export function getNavItems(langDir: string, subDir: string) {
         link: `/${langDir}/${subDir}/${id}`,
     }));
 }
+
+export function getNoticeItems() {
+    const absPath = path.resolve(docsDir, "zh_cn", "notice");
+    if (!fs.existsSync(absPath)) return [];
+    return fs
+        .readdirSync(absPath)
+        .filter((fileName) => fileName.endsWith(".md"))
+        .sort()
+        .map((fileName) => {
+            const rawName = fileName.replace(".md", "");
+            const text = rawName.replace(/^\d+\.\d+-/, "");
+            return {
+                text,
+                link: `#maaly-popup-${encodeURIComponent(rawName)}`,
+            };
+        });
+}

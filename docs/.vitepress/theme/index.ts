@@ -5,6 +5,9 @@ import BackToTop from "./components/BackToTop.vue";
 import NavContactGroup from "./components/NavContactGroup.vue";
 import ReadingTime from "./components/ReadingTime.vue";
 import SocialTitles from "./components/SocialTitles.vue";
+import AnnouncementPopup from "./components/AnnouncementPopup.vue";
+import ReleaseContent from "./components/ReleaseContent.vue";
+import PopupPage from "./components/PopupPage.vue";
 import "./custom.css";
 import Mermaid from "./components/Mermaid.vue";
 import Flowchart from './components/Flowchart.vue'
@@ -15,7 +18,7 @@ export default {
     Layout() {
         const { theme } = useData();
         return h(DefaultTheme.Layout, null, {
-            "layout-top": () => h(SocialTitles),
+            "layout-top": () => [h(SocialTitles), h(AnnouncementPopup)],
             "nav-bar-content-before": () => {
                 const meta = theme.value.latestReleaseMeta;
                 return meta ? h('a', {
@@ -35,5 +38,7 @@ export default {
     enhanceApp({ app }: { app: any }) {
         app.component('Mermaid', Mermaid);
         app.component('Flowchart', Flowchart);
+        app.component('ReleaseContent', ReleaseContent);
+        app.component('PopupPage', PopupPage);
     },
 };

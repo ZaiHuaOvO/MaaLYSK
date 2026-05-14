@@ -1,5 +1,5 @@
 import { latestReleaseMeta } from "./version";
-import { getNavItems } from "./sidebar";
+import { getNavItems, getNoticeItems } from "./sidebar";
 
 const versionBadgeHtml = `<span class="nav-version-badge"><span class="nav-version-spark">✦</span><span>${latestReleaseMeta.version}</span></span>`;
 
@@ -14,7 +14,10 @@ export const zhNav = [
     versionNavItem,
     {
         text: '<i class="ri-megaphone-line"></i> 公告栏',
-        items: getNavItems("zh_cn", "announcement"),
+        items: [
+            ...getNoticeItems(),
+            ...getNavItems("zh_cn", "announcement"),
+        ],
     },
     {
         text: '<i class="ri-book-read-line"></i> 用户手册',
