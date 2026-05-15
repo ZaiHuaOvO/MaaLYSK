@@ -72,7 +72,7 @@ onMounted(() => {
                 </span>
                 <span class="vp-btn-text">
                   <span class="vp-btn-title">我不是新手</span>
-                  <span class="vp-btn-desc">直接跳转到下载方式</span>
+                  <span class="vp-btn-desc">直接跳转下载</span>
                 </span>
               </button>
               <button class="vp-btn vp-btn-outline" @click="step = 'beginner'">
@@ -207,16 +207,16 @@ onMounted(() => {
 }
 
 .vp-btn-primary {
-  background: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-2);
   color: #fff;
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-2);
 }
 
 .vp-btn-primary:hover {
-  background: var(--vp-c-brand-2);
-  border-color: var(--vp-c-brand-2);
+  background: var(--vp-c-brand-3);
+  border-color: var(--vp-c-brand-3);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(106, 90, 205, 0.35);
+  box-shadow: 0 4px 16px rgba(106, 90, 205, 0.25);
 }
 
 .vp-btn-outline {
