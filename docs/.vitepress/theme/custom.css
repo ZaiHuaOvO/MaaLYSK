@@ -233,3 +233,10 @@ a[href="#version-popup"] .vpi-chevron-right {
         display: none;
     }
 }
+
+/* --- 运行库安装表格允许换行 --- */
+.table-figure table th,
+.table-figure table td {
+    white-space: normal;
+    word-break: break-word;
+}
