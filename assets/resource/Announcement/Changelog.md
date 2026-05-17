@@ -1,6 +1,6 @@
 MaaLYSK更新日志
 
-# 🎉 **MaaLYSK v0.4.1-beta.2**(公测版)
+# 🎉 **MaaLYSK v0.4.1-beta.3**(公测版)
 
 ❗MaaLYSK本体 是免费哒，请勿有偿购买代下、安装等服务 ❗
 
@@ -12,7 +12,7 @@ MaaLYSK更新日志
 
   如果内置更新出现问题（如exe文件消失、UI报错等）请手动前往[Mirror酱](https://github.com/MaaAssistantArknights/MaaLYSK/releases)或[Github](https://github.com/MaaAssistantArknights/MaaLYSK/releases)下载最新版本，而不是重新下载旧版本后继续内置更新。
 
-### 📕 公测版v0.4.1-beta2更新内容
+### 📕 公测版v0.4.1-beta3更新内容
 
 ### 💫免费福利签到
 
@@ -25,8 +25,6 @@ MaaLYSK更新日志
 ### ✈️恋与深空启动、♻主页面切换账号
 
 增加指定账号登录说明
-
-Ci：增加一个win-x64命令行版本
 
 ### 📕 公测版v0.4.1-beta1更新内容
 
